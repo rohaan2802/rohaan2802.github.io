@@ -731,15 +731,18 @@ h2::after {
   .about-text, .contact-info, .grid, .skill-list, .social-icons {
     max-width: 100%; /* Adjust for smaller screens */
   }
-  .hero-title { font-size: 2rem; margin-top: 2rem; }  
-  .hero-subtitle { font-size: 1.3rem; }
+  .hero-title { font-size: 2rem; margin-top: 290px; }  
+  .hero-subtitle {
+     font-size: 1.3rem; 
+     margin-bottom: -150px;
+    }
    .profile-pic {
     width: 120px;
     margin-top: 1rem;
   }
   .hero-btn {
     position: static;
-    margin: 2rem auto;
+    margin-bottom: -520px ;
     font-size: 1.1rem;
     padding: 0.7rem 1.4rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
@@ -764,7 +767,7 @@ h2::after {
     padding: 2rem 0;
     padding-top: 5rem;
   }
-  .hero-title { font-size: 2.2rem; margin-top: 1.5rem; }
+  .hero-title { font-size: 2.2rem; margin-top: 250px; }
   .hero-subtitle { font-size: 1.1rem; }
 .hero-btn {
     font-size: 1rem;
