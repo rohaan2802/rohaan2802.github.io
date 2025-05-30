@@ -717,7 +717,12 @@ h2::after {
     font-size: 1.2rem;
     max-width: 100px;
   }
-
+.resume-button {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
   .hero {
     min-height: 90vh; /* Adjusted for tablets */
     padding: 3rem 0;
@@ -766,6 +771,13 @@ h2::after {
    min-height: 80vh; /* Increase for mobile */
     padding: 2rem 0;
     padding-top: 5rem;
+  }
+  .resume-button
+  {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
   .hero-title { font-size: 2.2rem; margin-top: 250px; }
   .hero-subtitle { font-size: 1.1rem; }
