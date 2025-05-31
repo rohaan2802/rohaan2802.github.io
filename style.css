@@ -125,7 +125,7 @@ body
   z-index: 2;
   color: #ffffff;
   animation: zoomIn 1.5s ease-in-out;
-  margin-top: 8rem; /* Adjusted for spacing */
+  margin-top: 9rem; /* Adjusted for spacing */
 }
 
 .hero-subtitle {
@@ -135,12 +135,12 @@ body
   font-weight: 800;
   z-index: 2;
   animation: fadeIn 2s ease-in-out;
-  margin-top: 15rem;
+  margin-top: 16rem;
 }
 
 .hero-btn {
   position:absolute;
-  margin-bottom: -23rem;
+  margin-bottom: -25rem;
   z-index: 2;
   background: var(--accent);
   color: #fff;
