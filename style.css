@@ -159,7 +159,6 @@ body
 }
 
 .profile-pic {
-  position: absolute;
   width: 250px; 
   height: 300px; /* Made equal to width for perfect circle */
   border-radius: 50%; /* 50% is standard for perfect circles */
