@@ -19,7 +19,7 @@
 
 body 
 {
-  background: #e8e3a3; /* Set a solid background color */
+  background: #d4e180; /* Set a solid background color */
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
@@ -124,30 +124,30 @@ body
   z-index: 2;
   color: #ffffff;
   animation: zoomIn 1.5s ease-in-out;
-  margin-top: -1.4rem; /* Adjusted for spacing */
+  margin-top: -0.9rem; /* Adjusted for spacing */
 }
 
 .hero-subtitle {
   /* position: absolute; */
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #d29c06;
   font-weight: 800;
   z-index: 2;
   animation: fadeIn 2s ease-in-out;
-  margin-top: -1rem;
+  margin-top: -0.9rem;
 }
 
 .hero-btn {
   /* position:static; */
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
   z-index: 2;
   background: var(--accent);
   color: #fff;
   padding: 0.7rem 1.1rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 1.7rem;
   transition: transform 0.3s, box-shadow 0.3s;
   animation: pulse 2s infinite;
 }
@@ -164,7 +164,7 @@ body
   border: 6px solid #fff;
   object-fit: cover;
   z-index: 2;
-  margin-top: -1.6rem;
+  margin-top: -2.2rem;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   box-shadow: 0 6px 16px var(--shadow);
   animation: float 4s ease-in-out infinite;
@@ -216,7 +216,7 @@ body
 .section {
   position:relative;
   z-index: 2;
-  background: #e8e3a3; /* Fully opaque white background */
+  background: #d4e180; /* Fully opaque white background */
   transition: background 0.5s ease;
   width: 100%; /* Ensure full width within container */
   display: flex; /* Added to center content */
@@ -923,18 +923,21 @@ h2::after {
 @media (max-width: 375px) {
   .container {
     padding: 0.5rem;
-    max-width: 500px;
+    max-width: 100%;
   }
 
-  .nav-container
+ .nav-container
   {
     width: 100%;
   }
   .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction:row;
+    gap: 0.9rem;
   }
 
+.navbar a {
+  font-size: 0.6rem;
+}
   .hero-title {
     font-size: 1.7rem;
     margin-top: 290px;
@@ -949,7 +952,6 @@ h2::after {
   .profile-pic {
     width: 140px;
     height: 140px;
-    margin-bottom: 24rem;
   }
 
 
@@ -972,8 +974,36 @@ h2::after {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
+
+  .contact-info
+  {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .container
+  {
+    max-width: 100%;
+  }
+
+  .card h3 {
+    font-size: 1rem; 
+}
+
+.about-text {
+  height: 900px;
+  font-size: 1.2rem;
+  }
+
+  .resume-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  
+
 }
 
 
