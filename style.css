@@ -950,11 +950,10 @@ footer {
 
   }
 
-
-.hero-btn {
-    font-size: 0.7rem;
-    padding: 0.6rem 0.9rem;
-    width: 100%;
+    .hero-btn {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;    /* Adds space around the button */
+    margin-bottom: 3rem;
   }
 
   .card {
@@ -1069,10 +1068,10 @@ footer {
     margin: 1rem 0;    /* Positive margin for natural spacing */
   }
 
-.hero-btn {
-    font-size: 0.7rem;
-    padding: 0.6rem 0.9rem;
-    width: 100%;
+  .hero-btn {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;    /* Adds space around the button */
+    margin-bottom: 3rem;
   }
 
   .profile-pic {
