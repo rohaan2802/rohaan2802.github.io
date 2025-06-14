@@ -950,12 +950,14 @@ footer {
 
   }
 
-    /* .hero-btn {
-    font-size: 0.9rem;
-    margin-top: 0.1rem;    
-    margin-bottom: 3rem;
-  } */
 
+.hero-btn {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.9rem;
+    width: 100%;
+  }
+
+  
   .card {
     padding: 1rem;
   }
