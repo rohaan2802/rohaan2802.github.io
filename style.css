@@ -96,7 +96,7 @@ body
   justify-content: center;
   background-image: url('images/background2.jpg'); /* Moved from inline style */
   background-size:cover; /* Ensure it fills the area */
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   text-align: center;
   overflow: hidden;
@@ -942,7 +942,7 @@ footer {
 
 
 .hero-btn {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0.5rem 1rem;
     width: 100%;
   }
@@ -988,12 +988,20 @@ footer {
   font-size: 1.2rem;
   }
 
-  
+    .hero {
+    min-height: 100vh; /* ✅ Full screen height */
+    background-size:cover;
+    background-position: center top; /* Or try 'center center' */
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
 
 }
 
 
 @media (max-width: 412px) {
+
+
 
   .navbar {
   position: fixed;
