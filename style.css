@@ -15,6 +15,8 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
+  outline: 1px solid red;
+
 }
 
 body 
@@ -24,7 +26,15 @@ body
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh; /* Ensure body is at least viewport height */
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Navbar */
 .navbar {
@@ -997,6 +1007,8 @@ footer {
 .about-text {
   height: 1100px;
   font-size: 1.2rem;
+  width: 100%;
+  max-width: 600px;
   }
 
     .hero {
@@ -1093,6 +1105,8 @@ footer {
   .about-text
   {
     margin-bottom: 1400px;
+     width: 100%;
+  max-width: 600px;
   }
   
 }
