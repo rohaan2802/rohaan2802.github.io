@@ -1127,7 +1127,17 @@ footer {
   .card-content {
     max-height: 6rem; /* Adjust for smaller screens */
   }
-
+  .about-text
+  {
+  width: 100%;
+  max-width: 900px;
+  height:100%;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  white-space: normal; /* Allow text to wrap naturally */
+  text-align: justify; /* Justify text for better readability */
+  }
+}
 }
 
 @media (max-width: 853px) {
