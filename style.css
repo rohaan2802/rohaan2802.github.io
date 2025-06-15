@@ -15,7 +15,6 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-
 }
 
 body 
@@ -960,7 +959,7 @@ footer {
 {
     display: flex;
     justify-content: center; /* Center the skills */
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
   .hero {
@@ -1069,8 +1068,8 @@ footer {
 
   .resume-button
 {
-    font-size: 1.9rem;
-    padding: 1.9rem 1.5rem;
+    font-size: 1.6rem;
+    padding: 1.1rem 1.4rem;
   }
 
   .navbar {
