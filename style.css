@@ -956,6 +956,13 @@ footer {
     margin-bottom: 70px;
   }
 
+.skill-list
+{
+    display: flex;
+    justify-content: center; /* Center the skills */
+    font-size: 0.7rem;
+}
+
   .hero {
     min-height: 90vh; /* Adjusted for smaller screens */
     padding: 3rem 0;
@@ -968,7 +975,7 @@ footer {
     margin: 1rem auto;
   }
 
-  .about-text, .contact-info, .grid, .skill-list, .social-icons {
+  .contact-info, .grid, .social-icons {
     max-width: 100%; /* Adjust for smaller screens */
   }
 
@@ -1063,8 +1070,6 @@ footer {
 
 
 @media (max-width: 412px) {
-
-
 
 
   .navbar {
