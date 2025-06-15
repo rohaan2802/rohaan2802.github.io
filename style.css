@@ -1127,13 +1127,7 @@ footer {
   .card-content {
     max-height: 6rem; /* Adjust for smaller screens */
   }
-  .about-text
-  {
-  width: 100%;
-  max-width: 900px;
-  height:100%;
-  margin-bottom: 30px;
-}
+
 }
 
 @media (max-width: 853px) {
