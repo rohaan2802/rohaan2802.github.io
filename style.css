@@ -1116,7 +1116,8 @@ footer {
 
   .hero-subtitle {
     font-size: 1.9rem;
-    margin: 1rem 0.1rem;
+    margin: 1rem;
+    width: 100%;
     }
 
   .hero-btn {
