@@ -1098,12 +1098,13 @@ footer {
   }
 
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+    font-weight: 900;
     margin-top: -1rem;    /* Positive margin for natural spacing */
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     margin: 1rem 0;    /* Positive margin for natural spacing */
   }
 
@@ -1113,8 +1114,8 @@ footer {
   
 
   .profile-pic {
-    width: 140px;
-    height: 160px;
+    width: 240px;
+    height: 270px;
     margin-top: 0.3rem;    /* Centers vertically, no horizontal offset */
     border-radius: 50%; /* 50% is standard for perfect circles */
     border: 4px solid #fff;
@@ -1126,14 +1127,16 @@ footer {
 
   .card-content {
     max-height: 6rem; /* Adjust for smaller screens */
+
   }
+
   .about-text
   {
   width: 100%;
   max-width: 900px;
   height:100%;
   margin-bottom: 30px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   white-space: normal; /* Allow text to wrap naturally */
   text-align: justify; /* Justify text for better readability */
   }
