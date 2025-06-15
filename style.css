@@ -990,7 +990,9 @@ footer {
 
   
   .card {
-    padding: 1rem;
+    padding: 1rem ;
+    width: 100%;
+
   }
 
   .card-content {
@@ -1000,8 +1002,14 @@ footer {
   .grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: 87%;
   }
 
+  .section
+  {
+    max-width: 100%;
+    padding:   ;
+  }
   .social-icons a {
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
