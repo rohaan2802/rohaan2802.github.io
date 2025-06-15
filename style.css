@@ -1110,6 +1110,9 @@ footer {
 
   .hero-btn {
     margin-bottom: 3rem;
+    font-size: 1.8rem;
+    padding: 1rem 1.9rem;
+    max-width:fit-content;
   }
   
 
