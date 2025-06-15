@@ -1134,10 +1134,10 @@ footer {
   }
   .about-text
   {
-    margin-bottom: 1400px;
-     width: 100%;
+  width: 100%;
   max-width: 600px;
-  }
+  height: 2350px;
+    }
   
 }
 
