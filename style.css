@@ -1048,9 +1048,6 @@ footer {
     font-size: 14px !important;
   }
 
-  .about-text {
-    font-size: 0.9rem;
-  }
 
 }
 
@@ -1136,7 +1133,7 @@ footer {
   max-width: 900px;
   height:100%;
   margin-bottom: 30px;
-  font-size: 0.9rem;
+  font-size: 2.9rem;
 }
 }
 
