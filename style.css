@@ -1008,7 +1008,6 @@ footer {
   .section
   {
     max-width: 100%;
-    padding:   ;
   }
   .social-icons a {
     font-size: 0.9rem;
@@ -1117,7 +1116,8 @@ footer {
 
   .hero-subtitle {
     font-size: 1.9rem;
-    margin: 1rem 0;    /* Positive margin for natural spacing */
+    margin: 1rem 0.6rem;
+    padding-right: 0.2rem;    /* Positive margin for natural spacing */
   }
 
   .hero-btn {
@@ -1151,8 +1151,17 @@ footer {
   white-space: normal; /* Allow text to wrap naturally */
   text-align: justify; /* Justify text for better readability */
   }
+
+    .f1 {
+    font-size: 14px !important;
+  }
+
+  .f2 {
+    font-size: 13px !important;
+  }
+
 }
-}
+
 
 @media (max-width: 853px) {
 
