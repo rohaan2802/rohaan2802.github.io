@@ -953,8 +953,8 @@ footer {
 
 .hero-btn {
     font-size: 0.9rem;
-    padding: 0.6rem 0.9rem;
-    width: 100px;
+    padding: 1rem 1.4rem;
+    max-width:fit-content;
   }
 
   
@@ -1071,10 +1071,9 @@ footer {
   }
 
   .hero-btn {
-    font-size: 0.9rem;
-    margin-top: 0.1rem;    /* Adds space around the button */
     margin-bottom: 3rem;
   }
+  
 
   .profile-pic {
     width: 140px;
