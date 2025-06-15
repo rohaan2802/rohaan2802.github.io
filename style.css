@@ -1053,11 +1053,11 @@ footer {
   }
 
   .f1 {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
 
   .f2 {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 
 
@@ -1116,7 +1116,7 @@ footer {
   }
 
   .hero-subtitle {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin: 1rem 0;    /* Positive margin for natural spacing */
   }
 
