@@ -947,14 +947,6 @@ footer {
 
 @media (max-width: 375px) {
 
-.resume-button
-{
-    font-size: 1.4rem;
-    padding: 1.1rem 1.5rem;
-    margin-top: 50px;
-    margin-bottom: 70px;
-  }
-
 .skill-list
 {
     display: flex;
@@ -1068,7 +1060,7 @@ footer {
 
   .resume-button
 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     padding: 1.1rem 1.4rem;
   }
 
