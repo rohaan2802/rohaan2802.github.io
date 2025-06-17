@@ -143,20 +143,20 @@ html {
   font-weight: 800;
   z-index: 2;
   animation: fadeIn 2s ease-in-out;
-  margin-top: -0.9rem;
+  margin-top: 0rem;
 }
 
 .hero-btn {
   /* position:static; */
-  margin-top: 0.4rem;
+  margin-top: 2.4rem;
   z-index: 2;
   background: var(--accent);
   color: #fff;
-  padding: 0.7rem 1.1rem;
+  padding: 1rem 2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   transition: transform 0.3s, box-shadow 0.3s;
   animation: pulse 2s infinite;
 }
@@ -1080,9 +1080,9 @@ pre, code {
 @media (max-width: 412px) {
 
     .hero-subtitle {
-    font-size: 1rem;
+    font-size: 2.1rem;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .resume-button
