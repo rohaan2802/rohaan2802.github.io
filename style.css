@@ -1132,6 +1132,7 @@ pre, code {
   .hero-title {
     font-size: 2.3rem;
     font-weight: 900;
+    max-width: 100%;
     margin-top: -0.5rem;    /* Positive margin for natural spacing */
   }
 
