@@ -1061,7 +1061,7 @@ pre, code {
     min-height: 100vh; /* ✅ Full screen height */
     background-size:cover;
     background-position: center top; /* Or try 'center center' */
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-bottom: 2rem;
   }
 
@@ -1082,7 +1082,7 @@ pre, code {
 
 
   .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 40px;
     margin-top: 0px;
   }
@@ -1130,24 +1130,24 @@ pre, code {
   }
 
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-weight: 900;
-    margin-top: -1rem;    /* Positive margin for natural spacing */
+    margin-top: -0.5rem;    /* Positive margin for natural spacing */
   }
 
 
   .hero-btn {
-    margin-bottom: 4rem;
-    margin-top: -1rem;
+    margin-bottom: 6rem;
+    margin-top: 0rem;
   }
   
 
   .profile-pic {
     width: 240px;
     height: 270px;
-    margin-top: 0.3rem;    /* Centers vertically, no horizontal offset */
     border-radius: 50%; /* 50% is standard for perfect circles */
     border: 4px solid #fff;
+    margin-top: -3rem;
   }
 
   .contact-info {
