@@ -983,9 +983,9 @@ footer {
   }
 
   .hero-subtitle {
-    font-size: 0.3rem;
-    margin-bottom: -140px;
-
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    margin-top: 20px;
   }
 
   
@@ -1114,14 +1114,15 @@ footer {
     margin-top: -1rem;    /* Positive margin for natural spacing */
   }
 
-  .hero-subtitle {
+  /* .hero-subtitle {
     font-size: 1.7rem;
     margin: 1rem;
-    max-width: 100%;
-    }
+    width: 100%;
+    } */
 
   .hero-btn {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    margin-top: -1rem;
   }
   
 
