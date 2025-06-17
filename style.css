@@ -1073,11 +1073,7 @@ pre, code {
     font-size: 15px !important;
   }
 
-    .hero-subtitle {
-    font-size: 2.9rem;
-    margin-bottom: 40px;
-    margin-top: 0px;
-  }
+  
 
 }
 
@@ -1085,7 +1081,11 @@ pre, code {
 @media (max-width: 412px) {
 
 
-
+  .hero-subtitle {
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
   .resume-button
 {
     font-size: 1.3rem;
@@ -1158,7 +1158,7 @@ pre, code {
     max-height: 6rem; /* Adjust for smaller screens */
   }
 
-  /* .about-text
+  .about-text
   {
   width: 100%;
   max-width: 900px;
@@ -1167,7 +1167,7 @@ pre, code {
   font-size: 1rem;
   white-space: normal;
   text-align: justify; 
-  } */
+  }
 
     .f1 {
     font-size: 14px !important;
