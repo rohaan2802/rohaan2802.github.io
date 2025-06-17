@@ -995,12 +995,12 @@ pre, code {
     margin-top: 290px;
   }
 
-  .hero-subtitle {
+  /* .hero-subtitle {
     font-size: 1.6rem;
     margin-bottom: 40px;
     margin-top: 20px;
     width: 100%;
-  }
+  } */
 
   
   .card {
@@ -1078,6 +1078,12 @@ pre, code {
 
 
 @media (max-width: 412px) {
+
+    .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
 
   .resume-button
 {
