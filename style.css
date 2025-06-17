@@ -1074,21 +1074,17 @@ pre, code {
   }
 
     .hero-subtitle {
-    font-size: 2.1rem;
+    font-size: 2.9rem;
     margin-bottom: 40px;
     margin-top: 0px;
   }
-  
+
 }
 
 
 @media (max-width: 412px) {
 
-    .hero-subtitle {
-    font-size: 2.1rem;
-    margin-bottom: 40px;
-    margin-top: 0px;
-  }
+
 
   .resume-button
 {
