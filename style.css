@@ -990,10 +990,7 @@ pre, code {
     padding: 0.4rem 1.7rem;
     max-width:fit-content;
 }
-    .hero-title {
-    font-size: 1.7rem;
-    margin-top: 290px;
-  }
+
 
   /* .hero-subtitle {
     font-size: 1.6rem;
@@ -1130,9 +1127,8 @@ pre, code {
   }
 
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    max-width: 100%;
     margin-top: -0.5rem;    /* Positive margin for natural spacing */
   }
 
