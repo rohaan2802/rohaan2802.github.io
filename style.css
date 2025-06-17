@@ -1073,7 +1073,12 @@ pre, code {
     font-size: 15px !important;
   }
 
-
+    .hero-subtitle {
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  
 }
 
 
