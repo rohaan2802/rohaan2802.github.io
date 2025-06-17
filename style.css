@@ -1057,7 +1057,13 @@ pre, code {
     font-size: 0.8rem;
 }
 
-
+    .hero {
+    min-height: 100vh; /* ✅ Full screen height */
+    background-size:cover;
+    background-position: center top; /* Or try 'center center' */
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
 
   .f1 {
     font-size: 15px !important;
@@ -1074,16 +1080,9 @@ pre, code {
 
 @media (max-width: 412px) {
 
-    .hero {
-    background-size:cover;
-    background-position: center top; /* Or try 'center center' */
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    height: 1500px;
-  }
 
   .hero-subtitle {
-    font-size: 2.1rem;
+    font-size: 1.3rem;
     margin-bottom: 40px;
     margin-top: 0px;
   }
@@ -1131,7 +1130,7 @@ pre, code {
   }
 
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 900;
     margin-top: -1rem;    /* Positive margin for natural spacing */
   }
@@ -1146,7 +1145,7 @@ pre, code {
   .profile-pic {
     width: 240px;
     height: 270px;
-    margin-top: -4.3rem;    /* Centers vertically, no horizontal offset */
+    margin-top: 0.3rem;    /* Centers vertically, no horizontal offset */
     border-radius: 50%; /* 50% is standard for perfect circles */
     border: 4px solid #fff;
   }
