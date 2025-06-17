@@ -269,7 +269,10 @@ h2::after {
   text-align: justify; /* Changed from center to justify */
   color: var(--text);
   animation: fadeIn 1.5s ease-in-out;
-  height: 800px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  /* height: 800px; */
 }
 
 
@@ -993,9 +996,10 @@ pre, code {
   }
 
   .hero-subtitle {
-    font-size: 2.9rem;
+    font-size: 2rem;
     margin-bottom: 40px;
     margin-top: 20px;
+    justify-self: center;
   }
 
   
@@ -1147,16 +1151,16 @@ pre, code {
     max-height: 6rem; /* Adjust for smaller screens */
   }
 
-  .about-text
+  /* .about-text
   {
   width: 100%;
   max-width: 900px;
-  height:100%;
+  height:auto;
   margin-bottom: 30px;
   font-size: 1rem;
-  white-space: normal; /* Allow text to wrap naturally */
-  text-align: justify; /* Justify text for better readability */
-  }
+  white-space: normal;
+  text-align: justify; 
+  } */
 
     .f1 {
     font-size: 14px !important;
