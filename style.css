@@ -945,6 +945,16 @@ footer {
   margin: 5px 0 10px;
 }
 
+/* p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+pre, code {
+  white-space: pre-wrap;
+  word-break: break-word;
+} */
+
 
 @media (max-width: 375px) {
 
@@ -983,7 +993,7 @@ footer {
   }
 
   .hero-subtitle {
-    font-size: 1.9rem;
+    font-size: 2.9rem;
     margin-bottom: 40px;
     margin-top: 20px;
   }
