@@ -32,6 +32,8 @@ body
 html {
   margin: 0;
   padding: 0;
+  scroll-padding-top: 60px; /* Adjust based on your navbar height */
+  scroll-behavior: smooth;
 }
 
 
