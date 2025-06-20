@@ -32,7 +32,7 @@ body
 html {
   margin: 0;
   padding: 0;
-  scroll-padding-top: 60px; /* Adjust based on your navbar height */
+  scroll-padding-top: 80px; /* Adjust based on your navbar height */
   scroll-behavior: smooth;
 }
 
@@ -740,14 +740,17 @@ footer {
     max-width: 100px;
   }
 .resume-button {
-    font-size: 1.5rem;
-    padding: 0.8rem 1.5rem;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    font-size: 2rem;
+    padding: 1.3rem 1.9rem;
+  margin-top: 10rem;
+  border-radius: 20px;
+  margin-bottom: 10rem;
   }
   .hero {
-    min-height: 90vh; /* Adjusted for tablets */
+    min-height:100vh; /* Adjusted for tablets */
     padding: 3rem 0;
+        background-size:cover;
+    background-position: center center; /* Or try 'center center' */
     padding-top: 5.5rem; /* Adjust for navbar */
   }
   .container {
@@ -755,34 +758,59 @@ footer {
     padding: 0 0.5rem;
     margin: 1rem auto;
   }
-  .about-text, .contact-info, .grid, .skill-list, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
+
+.about-text
+{
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+}
+
+  .hero-title 
+  {
+     font-size: 2.6rem; 
   }
-  .hero-title { font-size: 2rem; margin-top: 290px; }  
-  .hero-subtitle {
-     font-size: 1.3rem; 
-     margin-bottom: -150px;
-    }
-   .profile-pic {
-    width: 120px;
-    margin-top: 1rem;
+    
+    
+  .hero-subtitle 
+  {
+     font-size: 1.9rem; 
   }
+  
   .hero-btn {
-    position: static;
-    margin-bottom: -520px ;
-    font-size: 1.1rem;
-    padding: 0.7rem 1.4rem;
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+    padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
-    max-width: 200px;
-    display: block;
+    max-width:fit-content;
   }
-    .profile-pic { width: 220px; height: 220px; margin-bottom: 1.5rem; }
-  h2 { font-size: 2.4rem; }
-  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: column;}
-  .navbar a { font-size: 1rem; }
+    .profile-pic 
+    { 
+      width: 300px; 
+      height: 340px; 
+      margin-top:1rem ;
+    }
+
+    .skill-list
+    {
+      font-size: 1rem;
+  margin-bottom: 10rem;
+    }
+
+
+  h2 { font-size: 3.4rem; }
+  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .navbar a 
+  { 
+    font-size: 1.3rem; 
+  }
+  .contact-info
+  {
+    font-size: 1.7rem;
+  }
   .card { padding: 1.5rem; }
   .container { padding: 0 0.5rem; margin: 1rem auto; }
-  .social-icons a { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  .social-icons a { padding: 0.6rem 1.2rem; font-size: 1.2rem; }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -1078,7 +1106,7 @@ pre, code {
 }
 
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
 
 
   .hero-subtitle {
@@ -1152,6 +1180,7 @@ pre, code {
 
   .contact-info {
     white-space: nowrap !important; /* Retain your original style */
+     font-size: 1rem;
   }
 
   .card-content {
@@ -1180,14 +1209,4 @@ pre, code {
 }
 
 
-@media (max-width: 853px) {
-
-.hero
-{
-  margin-bottom: -820px;
-  padding-bottom: 780px;
-}
-
-
-}
 
