@@ -730,6 +730,119 @@ footer {
 
 
 /* Responsive */
+
+
+@media (max-width: 1024px) {
+
+  .navbar a 
+  { 
+    font-size: 2rem; 
+  }
+  .navbar ul { gap: 4rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 400px; 
+    height: 490px; 
+    margin-top: -2rem;
+  }
+.hero-title 
+  {
+     font-size: 4.5rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3.2rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.7rem;
+    margin-top: 0.6rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.7rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+  .contact-info
+  {
+    font-size: 2.3rem;
+    margin-bottom: 10rem;
+  }
+
+  .social-icons {
+    font-size: 1.7rem;
+    margin-bottom: 8rem;
+    }
+
+
+
+      .card h3 {
+    font-size: 2.7rem; 
+}
+
+.card h4
+{
+    font-size: 2.2rem;
+}
+
+.card p
+{
+    font-size: 1.8rem;
+}
+
+.card li
+{
+    font-size: 1.8rem;
+}
+
+.f1{
+  font-size: 35px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+
+}
+
+
 @media (max-width: 768px) {
   .card-content {
     max-height: 6rem; /* Adjust for smaller screens */
@@ -792,7 +905,7 @@ footer {
 
     .skill-list
     {
-      font-size: 1rem;
+      font-size: 1.1rem;
   margin-bottom: 10rem;
     }
 
@@ -814,102 +927,41 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+
+        .card h3 {
+    font-size: 2.4rem; 
 }
 
-@media (max-width: 480px) {
-  .hero {
-   min-height: 80vh; /* Increase for mobile */
-    padding: 2rem 0;
-    padding-top: 5rem;
-  }
-  .resume-button
-  {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-    margin-top: 50px;
-    margin-bottom: 70px;
-  }
-  .hero-title { font-size: 2.2rem; margin-top: 250px; }
-  .hero-subtitle { font-size: 1.1rem; }
-.hero-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-    max-width: 180px;
-    width: 100%;
-  }
-    .profile-pic { width: 180px; height: 180px; margin-bottom: 1rem; }
-  h2 { font-size: 2rem; }
-  .navbar ul { gap: 1rem; }
-  .social-icons { gap: 1rem; }
-  .social-icons a { padding: 0.5rem 1rem; }
-  .btn, .outline { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
-  .container {
-    width: 100%;
-    padding: 0 0.5rem;
-    margin: 1rem auto;
-  }
-  .about-text, .contact-info, .grid, .skill-list, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
-  }
-  .card-content {
-    max-height: 7.2rem; /* Adjust for mobile */
-  }
-  .toggle-btn, .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    max-width: 80px;
-  }
+.card h4
+{
+    font-size: 2.1rem;
 }
 
-
-
-
-@media (max-width: 480px) {
-  .hero {
-   min-height: 80vh; /* Increase for mobile */
-    padding: 2rem 0;
-    padding-top: 5rem;
-  }
-  .resume-button
-  {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-    margin-top: 50px;
-    margin-bottom: 70px;
-  }
-  .hero-title { font-size: 2.2rem; margin-top: 250px; }
-  .hero-subtitle { font-size: 1.1rem; }
-.hero-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-    max-width: 180px;
-    width: 100%;
-  }
-    .profile-pic { width: 180px; height: 180px; margin-bottom: 1rem; }
-  h2 { font-size: 2rem; }
-  .navbar ul { gap: 1rem; }
-  .social-icons { gap: 1rem; }
-  .social-icons a { padding: 0.5rem 1rem; }
-  .btn, .outline { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
-  .container {
-    width: 100%;
-    padding: 0 0.5rem;
-    margin: 1rem auto;
-  }
-  .about-text, .contact-info, .grid, .skill-list, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
-  }
-  .card-content {
-    max-height: 7.2rem; /* Adjust for mobile */
-  }
-  .toggle-btn, .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    max-width: 80px;
-  }
+.card p
+{
+    font-size: 1.4rem;
 }
 
+.card li
+{
+    font-size: 1.4rem;
+}
 
+.f1 {
+  font-size: 30px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.f2 {
+  font-size: 22px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  font-size: 1.2rem;
+}
+
+}
 
 @media (max-width: 576px) {
   .container {
@@ -942,172 +994,60 @@ footer {
   }
 }
 
-@media (max-width: 360px) {
-  .hero-title {
-    font-size: 1.6rem;
-    margin-top: 200px;
-  }
-
-  .hero-subtitle {
-    font-size: 0.9rem;
-  }
-
-  .hero-btn {
-    font-size: 0.9rem;
-    width: 100%;
-    max-width: 140px;
-  }
-
-  .profile-pic {
-    width: 140px;
-    height: 140px;
-  }
-
-  .resume-button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-}
-
-.f1 {
-  font-size: 25px;
-  margin: 0;
-}
-
-.f2 {
-  font-size: 20px;
-  margin: 5px 0 10px;
-}
-
-/* p {
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-pre, code {
-  white-space: pre-wrap;
-  word-break: break-word;
-} */
-
-
-@media (max-width: 375px) {
-
-.skill-list
-{
-    display: flex;
-    justify-content: center; /* Center the skills */
-    font-size: 0.9rem;
-}
-
+@media (max-width: 480px) {
   .hero {
-    min-height: 90vh; /* Adjusted for smaller screens */
-    padding: 3rem 0;
-    padding-top: 5.5rem; /* Adjust for navbar */
+   min-height: 80vh; /* Increase for mobile */
+    padding: 2rem 0;
+    padding-top: 5rem;
   }
-  
+  .resume-button
+  {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .hero-title { font-size: 2.2rem; margin-top: 250px; }
+  .hero-subtitle { font-size: 1.1rem; }
+.hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    max-width: 180px;
+    width: 100%;
+  }
+    .profile-pic { width: 180px; height: 180px; margin-bottom: 1rem; }
+  h2 { font-size: 2rem; }
+  .navbar ul { gap: 1rem; }
+  .social-icons { gap: 1rem; }
+  .social-icons a { padding: 0.5rem 1rem; }
+  .btn, .outline { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
   .container {
-    max-width: 100%;
+    width: 100%;
     padding: 0 0.5rem;
     margin: 1rem auto;
   }
-
-  .contact-info, .social-icons {
+  .about-text, .contact-info, .grid, .skill-list, .social-icons {
     max-width: 100%; /* Adjust for smaller screens */
   }
-
-  .hero-btn {
-    font-size: 1.5rem;
-    font-weight:bolder;
-    padding: 0.4rem 1.7rem;
-    max-width:fit-content;
-}
-
-
-  /* .hero-subtitle {
-    font-size: 1.6rem;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    width: 100%;
-  } */
-
-  
-  .card {
-    padding: 1rem ;
-    width: 100%;
-
-  }
-
   .card-content {
-    max-height: 6rem;
+    max-height: 7.2rem; /* Adjust for mobile */
   }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 87%;
+  .toggle-btn, .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    max-width: 80px;
   }
-
-  .section
-  {
-    max-width: 100%;
-  }
-  .social-icons a {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  .contact-info
-  {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-  }
-
-  .card h3 {
-    font-size: 1.4rem; 
 }
 
-.card h4
-{
-    font-size: 1.1rem;
-}
-
-.card p
-{
-    font-size: 0.8rem;
-}
-
-.card li
-{
-    font-size: 0.8rem;
-}
-
-    .hero {
-    min-height: 100vh; /* ✅ Full screen height */
-    background-size:cover;
-    background-position: center top; /* Or try 'center center' */
-    padding-top: 10rem;
-    padding-bottom: 2rem;
-  }
-
-  .f1 {
-    font-size: 15px !important;
-  }
-
-  .f2 {
-    font-size: 15px !important;
-  }
-
-  
-
-}
 
 
 @media (max-width: 414px) {
 
+  .grid
+  {
+    gap: 1rem;
+    width: 100%;
+  }
 
   .hero-subtitle {
     font-size: 1.4rem;
@@ -1199,14 +1139,157 @@ pre, code {
   }
 
     .f1 {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 
   .f2 {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
 
+  .social-icons
+  {
+    margin-bottom: 2rem;
+  }
+
+  
 }
 
 
 
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.6rem;
+    margin-top: 200px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .resume-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+.f1 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.f2 {
+  font-size: 20px;
+  margin: 5px 0 10px;
+}
+
+}
+
+@media (max-width: 375px) {
+
+.skill-list
+{
+    display: flex;
+    justify-content: center; /* Center the skills */
+    font-size: 0.9rem;
+}
+  
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .contact-info, .social-icons {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+
+  .hero-btn {
+    font-size: 1.5rem;
+    font-weight:bolder;
+    padding: 0.4rem 1.7rem;
+    max-width:fit-content;
+}
+  
+  .card {
+    padding: 1rem ;
+    width: 100%;
+
+  }
+
+  .card-content {
+    max-height: 6rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 87%;
+  }
+
+  .section
+  {
+    max-width: 100%;
+  }
+  .social-icons a {
+    font-size: 0.9rem;
+
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info
+  {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.4rem; 
+}
+
+.card h4
+{
+    font-size: 1.1rem;
+}
+
+.card p
+{
+    font-size: 0.8rem;
+}
+
+.card li
+{
+    font-size: 0.8rem;
+}
+
+    .hero {
+    min-height: 100vh; /* ✅ Full screen height */
+    background-size:cover;
+    background-position: center top; /* Or try 'center center' */
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+  }
+
+
+
+  #backToTop {
+    bottom: 1.5rem; /* Adjusted for smaller screens */
+    right: 1.5rem; /* Adjusted for smaller screens */
+    font-size: 1.2rem; /* Larger font size for better visibility */
+    padding: 0.8rem 1rem; /* Increased padding for larger button */
+  }
+  
+
+}
