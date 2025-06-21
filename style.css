@@ -751,24 +751,24 @@ footer {
 
   .profile-pic
   {
-    width: 400px; 
-    height: 490px; 
-    margin-top: -2rem;
+    width: 500px; 
+    height: 590px; 
+    margin-top: -7rem;
   }
 .hero-title 
   {
-     font-size: 4.5rem; 
+     font-size: 5.5rem; 
   }
   
     
   .hero-subtitle 
   {
-     font-size: 3.2rem; 
+     font-size: 3.6rem; 
   }
   
   .hero-btn {
-    font-size: 2.7rem;
-    margin-top: 0.6rem;
+    font-size:3.5rem;
+    margin-top: 3rem;
     padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
     max-width:fit-content;
@@ -944,7 +944,7 @@ footer {
   }
 
   .social-icons {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: -2rem;
     }
 
@@ -1003,7 +1003,142 @@ footer {
   }
 }
 
+@media (max-width: 853px) {
 
+  .navbar a 
+  { 
+    font-size: 1.8rem; 
+  }
+  .navbar ul { gap: 3rem; flex-wrap: wrap;  flex-direction: grid;}
+
+
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .profile-pic
+  {
+    width: 480px; 
+    height: 590px; 
+    margin-top: -3rem;
+  }
+.hero-title 
+  {
+     font-size: 4.5rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.7rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 2.1rem;
+    margin-bottom: 10rem;
+    white-space: nowrap;
+  }
+
+  .social-icons
+  {
+    font-size: 1.5rem;
+    margin-bottom: -3rem;
+    }
+
+      .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+      .card h3 {
+    font-size: 3.6rem; 
+}
+
+.card h4
+{
+    font-size: 2.5rem;
+}
+
+.card p
+{
+    font-size: 1.9rem;
+}
+
+.card li
+{
+    font-size: 1.9rem;
+}
+
+.f1{
+  font-size: 30px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.skill-list
+{
+  font-size: 1.8rem;
+}
+
+.grid {
+    gap: 3rem;
+    width: 95%;
+    justify-content: center; /* Center the grid */
+  }
+
+
+} 
 
 @media (max-width: 830px) {
 
@@ -1024,6 +1159,7 @@ footer {
   {
     width: 480px; 
     height: 590px; 
+    margin-top: -3rem;
   }
 .hero-title 
   {
@@ -1038,7 +1174,7 @@ footer {
   
   .hero-btn {
     font-size: 2.7rem;
-    margin-top: 0.6rem;
+    margin-top: 2rem;
     padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
     max-width:fit-content;
@@ -1360,7 +1496,7 @@ h2
 
 
       .card h3 {
-    font-size: 2.5rem; 
+    font-size: 2.2rem; 
 }
 
 .card h4
@@ -1577,10 +1713,36 @@ h2
     padding-bottom: 2rem;
   }
 
+  .btn,.toggle-btn
+{
+  font-size: 1.4rem;
+  padding: 1rem 1.4rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+.card
+  {
+    width: 95%; /* Ensure card fits grid */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Ensure content is spaced */
+    justify-self: center;
+    height: 100%;
+  }
+
 }
 
 @media (max-width: 414px) {
 
+  .card{
+    width: 95%; /* Ensure card fits grid */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Ensure content is spaced */
+    justify-self: center;
+    height: 100%;
+  }
 .navbar a 
   { 
     font-size: 1rem; 
@@ -1596,7 +1758,7 @@ h2
   .hero-title 
   {
     margin-top: 2rem;
-     font-size: 2.6rem; 
+     font-size: 2.3rem; 
   }
   .hero-subtitle 
   {
@@ -1652,7 +1814,7 @@ h2
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
     width: 97%;
     justify-content: center; /* Center the grid */
   }
@@ -1688,6 +1850,14 @@ h2
     font-size: 15px !important;
     padding-bottom: 2rem;
   }
+
+  .btn,.toggle-btn
+{
+  font-size: 1.2rem;
+  padding: 1rem 1.3rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
 
 }
 
@@ -1811,7 +1981,7 @@ h2
   { 
     font-size: 0.8rem; 
   }
-  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+  .navbar ul { gap: 1rem; flex-wrap: wrap;  flex-direction: grid;}
 
   .hero {
    
@@ -1988,7 +2158,7 @@ h2
   .grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-    width: 87%;
+    width: 95%;
   }
 
   .section
@@ -2050,13 +2220,46 @@ h2
     font-size: 13px !important;
     padding-bottom: 2rem;
   }
-  
+
+    .section
+  {
+    max-width: 95%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
 }
 
 
 
 @media (max-width: 344px) {
 
+.navbar a 
+  { 
+    font-size: 1rem; 
+  }
+  .navbar ul { gap: 0.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .hero-title
+  {
+    margin-top: -1rem;
+     font-size: 1.9rem; 
+  }
+
+  .hero-subtitle 
+  {
+     font-size: 1.3rem;
+     margin-top: 0.5rem; 
+  }
+
+  .hero-btn
+  {
+    font-size: 1rem;
+    margin-top: 2.6rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
 
 .skill-list
 {
@@ -2153,5 +2356,10 @@ h2
     padding: 0.8rem 1rem; /* Increased padding for larger button */
   }
   
+  .section
+  {
+    max-width: 95%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
 
 }
