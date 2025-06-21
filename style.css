@@ -1975,6 +1975,143 @@ h2
 
 }
 
+
+@media (max-width: 375px) {
+
+  .navbar a 
+  { 
+    font-size: 0.9rem; 
+  }
+  .navbar ul { gap: 1.3rem; flex-wrap: wrap;  flex-direction: grid;}
+
+.profile-pic
+  {
+    width: 280px; 
+    height: 340px; 
+    margin-top:1rem ;
+  }
+
+  .hero-title
+  {
+    margin-top: -1rem;
+     font-size: 2.3rem; 
+  }
+
+  .hero-subtitle 
+  {
+     font-size: 1.4rem;
+     margin-top: 0.5rem; 
+  }
+
+.skill-list
+{
+    display: flex;
+    justify-content: center; /* Center the skills */
+    font-size: 0.9rem;
+}
+  
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .contact-info, .social-icons {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+
+  .hero-btn {
+    font-size: 1.5rem;
+    font-weight:bolder;
+    padding: 0.4rem 1.7rem;
+    max-width:fit-content;
+}
+  
+  .card {
+    padding: 1rem ;
+    width: 100%;
+
+  }
+
+  .card-content {
+    max-height: 6rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 95%;
+  }
+
+  .section
+  {
+    max-width: 100%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+  .social-icons a {
+    font-size: 0.9rem;
+
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info
+  {
+    font-size: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem; 
+}
+
+.card h4
+{
+    font-size: 1.4rem;
+}
+
+.card p
+{
+    font-size: 1rem;
+}
+
+.card li
+{
+    font-size: 1rem;
+}
+
+
+
+  #backToTop {
+    bottom: 1.5rem; /* Adjusted for smaller screens */
+    right: 1.5rem; /* Adjusted for smaller screens */
+    font-size: 1.2rem; /* Larger font size for better visibility */
+    padding: 0.8rem 1rem; /* Increased padding for larger button */
+  }
+  
+
+   .f1 {
+    font-size: 14px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .f2 {
+    font-size: 13px !important;
+    padding-bottom: 2rem;
+  }
+
+    .section
+  {
+    max-width: 95%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+}
+
+
 @media (max-width: 360px) {
   
   .navbar a 
@@ -2094,140 +2231,6 @@ h2
 
 }
 
-@media (max-width: 375px) {
-
-  .navbar a 
-  { 
-    font-size: 0.9rem; 
-  }
-  .navbar ul { gap: 1.3rem; flex-wrap: wrap;  flex-direction: grid;}
-
-.profile-pic
-  {
-    width: 280px; 
-    height: 340px; 
-    margin-top:1rem ;
-  }
-
-  .hero-title
-  {
-    margin-top: -1rem;
-     font-size: 2.3rem; 
-  }
-
-  .hero-subtitle 
-  {
-     font-size: 1.4rem;
-     margin-top: 0.5rem; 
-  }
-
-.skill-list
-{
-    display: flex;
-    justify-content: center; /* Center the skills */
-    font-size: 0.9rem;
-}
-  
-  .container {
-    max-width: 100%;
-    padding: 0 0.5rem;
-    margin: 1rem auto;
-  }
-
-  .contact-info, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
-  }
-
-  .hero-btn {
-    font-size: 1.5rem;
-    font-weight:bolder;
-    padding: 0.4rem 1.7rem;
-    max-width:fit-content;
-}
-  
-  .card {
-    padding: 1rem ;
-    width: 100%;
-
-  }
-
-  .card-content {
-    max-height: 6rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 95%;
-  }
-
-  .section
-  {
-    max-width: 100%;
-    padding: 6rem 0; /* Ensure padding is consistent */
-  }
-  .social-icons a {
-    font-size: 0.9rem;
-
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  .contact-info
-  {
-    font-size: 1rem;
-    margin-bottom: 10rem;
-  }
-
-  .card h3 {
-    font-size: 1.8rem; 
-}
-
-.card h4
-{
-    font-size: 1.4rem;
-}
-
-.card p
-{
-    font-size: 1rem;
-}
-
-.card li
-{
-    font-size: 1rem;
-}
-
-
-
-  #backToTop {
-    bottom: 1.5rem; /* Adjusted for smaller screens */
-    right: 1.5rem; /* Adjusted for smaller screens */
-    font-size: 1.2rem; /* Larger font size for better visibility */
-    padding: 0.8rem 1rem; /* Increased padding for larger button */
-  }
-  
-
-   .f1 {
-    font-size: 14px !important;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
-  .f2 {
-    font-size: 13px !important;
-    padding-bottom: 2rem;
-  }
-
-    .section
-  {
-    max-width: 95%;
-    padding: 6rem 0; /* Ensure padding is consistent */
-  }
-
-}
 
 
 
