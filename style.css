@@ -1868,30 +1868,30 @@ h2
   { 
     font-size: 0.9rem; 
   }
-  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+  .navbar ul { gap: 1rem; flex-wrap: wrap;  flex-direction: grid;}
 
   .profile-pic
   {
-    width: 300px; 
-    height: 340px; 
+    width: 250px; 
+    height: 290px; 
     margin-top:1rem ;
   }
   .hero-title 
   {
-    margin-top: 1rem;
-     font-size: 2.3rem; 
+    margin-top: 0rem;
+     font-size: 2rem !important; 
   }
   .hero-subtitle 
   {
-     font-size: 2.2rem;
-     margin-top: 2rem; 
+     font-size: 1.4rem;
+     margin-top: 1rem; 
   }
 
   .hero-btn {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     margin-top: 1.6rem;
     padding: 0.7rem 1.9rem;
-    width: 100%; /* Optional: Make it span full width on smaller devices */
+    width: 100%; 
     max-width:fit-content;
     margin-bottom: 8rem;
   }
@@ -1903,7 +1903,7 @@ h2
 
   .resume-button
   {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding: 1.3rem 1.9rem;
     margin-top: 10rem;
     border-radius: 20px;
@@ -1915,41 +1915,41 @@ h2
   }
 
   .card h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .card h4
   {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .card p
   {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .card li
   {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-    width: 97%;
-    justify-content: center; /* Center the grid */
+    width: 96%;
+    justify-content: center; 
   }
   
   .section
   {
     max-width: 96%;
-    padding: 6rem 0; /* Ensure padding is consistent */
+    padding: 6rem 0; 
   }
 
   .contact-info
   {
-    font-size: 1rem;
-    white-space: nowrap; /* Allow text to wrap */
+    font-size: 0.9rem;
+    white-space: nowrap; 
   }
 
   .social-icons {
@@ -1959,24 +1959,36 @@ h2
 
   .social-icons a {
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
  .f1 {
-    font-size: 16px !important;
+    font-size: 14px !important;
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
 
   .f2 {
-    font-size: 15px !important;
+    font-size: 13px !important;
     padding-bottom: 2rem;
   }
-
+.skill-list
+{
+    font-size: 1rem;
+    margin-bottom: 10rem;
 }
 
+#backToTop {
+    bottom: 1.5rem; 
+    right: 1.5rem; 
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
 
-@media (max-width: 375px) {
+} 
+
+
+/* @media (max-width: 380px) {
 
   .navbar a 
   { 
@@ -1994,7 +2006,7 @@ h2
   .hero-title
   {
     margin-top: -1rem;
-     font-size: 2.3rem; 
+     font-size: 1rem; 
   }
 
   .hero-subtitle 
@@ -2006,7 +2018,7 @@ h2
 .skill-list
 {
     display: flex;
-    justify-content: center; /* Center the skills */
+    justify-content: center; 
     font-size: 0.9rem;
 }
   
@@ -2017,7 +2029,7 @@ h2
   }
 
   .contact-info, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
+    max-width: 100%; 
   }
 
   .hero-btn {
@@ -2046,7 +2058,7 @@ h2
   .section
   {
     max-width: 100%;
-    padding: 6rem 0; /* Ensure padding is consistent */
+    padding: 6rem 0; 
   }
   .social-icons a {
     font-size: 0.9rem;
@@ -2080,15 +2092,15 @@ h2
 .card li
 {
     font-size: 1rem;
-}
+} 
 
 
 
   #backToTop {
-    bottom: 1.5rem; /* Adjusted for smaller screens */
-    right: 1.5rem; /* Adjusted for smaller screens */
-    font-size: 1.2rem; /* Larger font size for better visibility */
-    padding: 0.8rem 1rem; /* Increased padding for larger button */
+    bottom: 1.5rem; 
+    right: 1.5rem; 
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
   }
   
 
@@ -2106,10 +2118,10 @@ h2
     .section
   {
     max-width: 95%;
-    padding: 6rem 0; /* Ensure padding is consistent */
+    padding: 6rem 0;  
   }
 
-}
+}*/
 
 
 @media (max-width: 360px) {
@@ -2145,7 +2157,7 @@ h2
     font-size: 1.7rem !important;
     margin-top: 1.6rem;
     padding: 0.7rem 1.9rem;
-    width: 100%; /* Optional: Make it span full width on smaller devices */
+    width: 100%; 
     max-width:fit-content;
     margin-bottom: 8rem;
   }
@@ -2191,20 +2203,20 @@ h2
     grid-template-columns: 1fr;
     gap: 1rem;
     width: 97%;
-    justify-content: center; /* Center the grid */
+    justify-content: center; 
   }
   
   .section
   {
     max-width: 96%;
-    padding: -20rem -20rem !important; /* Ensure padding is consistent */
+    padding: -20rem -20rem !important;
   }
 
   .contact-info
   {
     margin-top: 2rem;
     font-size: 2rem;
-    white-space: nowrap; /* Allow text to wrap */
+    white-space: nowrap; 
   }
 
   .social-icons {
@@ -2259,7 +2271,7 @@ h2
     font-size: 1rem;
     margin-top: 2.6rem;
     padding: 0.7rem 1.9rem;
-    width: 100%; /* Optional: Make it span full width on smaller devices */
+    width: 100%; 
     max-width:fit-content;
     margin-bottom: 8rem;
   }
@@ -2267,7 +2279,7 @@ h2
 .skill-list
 {
     display: flex;
-    justify-content: center; /* Center the skills */
+    justify-content: center; 
     font-size: 0.9rem;
 }
   
@@ -2278,7 +2290,7 @@ h2
   }
 
   .contact-info, .social-icons {
-    max-width: 100%; /* Adjust for smaller screens */
+    max-width: 100%; 
   }
 
   .hero-btn {
@@ -2342,27 +2354,19 @@ h2
     font-size: 0.8rem;
 }
 
-    .hero {
-    min-height: 100vh; /* ✅ Full screen height */
-    background-size:cover;
-    background-position: center top; /* Or try 'center center' */
-    padding-top: 10rem;
-    padding-bottom: 2rem;
-  }
-
 
 
   #backToTop {
-    bottom: 1.5rem; /* Adjusted for smaller screens */
-    right: 1.5rem; /* Adjusted for smaller screens */
-    font-size: 1.2rem; /* Larger font size for better visibility */
-    padding: 0.8rem 1rem; /* Increased padding for larger button */
+    bottom: 1.5rem; 
+    right: 1.5rem; 
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
   }
   
   .section
   {
     max-width: 95%;
-    padding: 6rem 0; /* Ensure padding is consistent */
+    padding: 6rem 0; 
   }
 
 }
