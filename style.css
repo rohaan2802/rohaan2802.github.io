@@ -783,9 +783,9 @@ footer {
     margin: 1rem auto;
   }
 
-  .contact-info, .social-icons {
+  /* .contact-info, .social-icons {
     max-width: 100%; 
-  }
+  } */
 
   .hero-btn {
     font-size: 1.5rem;
