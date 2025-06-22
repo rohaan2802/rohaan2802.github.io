@@ -2144,12 +2144,12 @@ h2
   }
   .hero-subtitle 
   {
-     font-size: 2rem;
+     font-size: 1.4rem;
      margin-top: 0.5rem; 
   }
 
   .hero-btn {
-    font-size: 1.7rem !important;
+    font-size: 1.4rem !important;
     margin-top: 1.6rem;
     padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
@@ -2164,8 +2164,8 @@ h2
 
   .resume-button
   {
-    font-size: 1.5rem;
-    padding: 1.3rem 1.9rem;
+    font-size: 1.4rem;
+    padding: 1.1rem 1.6rem;
     margin-top: 10rem;
     border-radius: 20px;
     margin-bottom: 10rem;
