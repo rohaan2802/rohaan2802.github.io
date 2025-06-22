@@ -741,9 +741,1243 @@ footer {
 /* Responsive */
 
 
+@media (max-width: 1024px) {
+
+  .navbar a 
+  { 
+    font-size: 2.3rem; 
+  }
+  .navbar ul { gap: 4rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 500px; 
+    height: 590px; 
+    margin-top: -7rem;
+  }
+.hero-title 
+  {
+     font-size: 5.5rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3.6rem; 
+  }
+  
+  .hero-btn {
+    font-size:3.5rem;
+    margin-top: 3rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 2.3rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 2.3rem;
+    margin-bottom: 10rem;
+  }
+
+  .social-icons {
+    font-size: 1.7rem;
+    margin-bottom: -2rem;
+    }
 
 
-@media screen and (max-width: 412px) {
+
+      .card h3 {
+    font-size: 2.7rem; 
+}
+
+.card h4
+{
+    font-size: 2.2rem;
+}
+
+.card p
+{
+    font-size: 1.8rem;
+}
+
+.card li
+{
+    font-size: 1.8rem;
+}
+
+.f1{
+  font-size: 35px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.btn,.toggle-btn
+{
+  font-size: 2rem;
+  padding: 1.2rem 1.9rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+.grid
+{
+    gap: 3rem;
+    width: 95%;
+    justify-content: center; /* Center the grid */
+  }
+
+}
+
+
+
+@media (max-width: 912px) {
+
+  .navbar a 
+  { 
+    font-size: 2rem; 
+  }
+  .navbar ul { gap: 4rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 500px; 
+    height: 590px; 
+    margin-top: -10rem;
+  }
+.hero-title 
+  {
+     font-size: 5.3rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3.3rem; 
+  }
+  
+  .hero-btn {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 2.3rem;
+    margin-bottom: 10rem;
+  }
+
+  .social-icons {
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
+    }
+
+
+
+      .card h3 {
+    font-size: 3.5rem; 
+}
+
+.card h4
+{
+    font-size: 2.8rem;
+}
+
+.card p
+{
+    font-size: 2rem;
+}
+
+.card li
+{
+    font-size: 2rem;
+}
+
+.btn,.toggle-btn
+{
+  font-size: 2.2rem;
+  padding: 1.2rem 1.9rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+.f1{
+  font-size: 35px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.grid
+{
+    gap: 3rem;
+    width: 95%;
+    justify-content: center; /* Center the grid */
+  }
+}
+
+@media (max-width: 853px) {
+
+  .navbar a 
+  { 
+    font-size: 1.8rem; 
+  }
+  .navbar ul { gap: 3rem; flex-wrap: wrap;  flex-direction: grid;}
+
+
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .profile-pic
+  {
+    width: 480px; 
+    height: 590px; 
+    margin-top: -3rem;
+  }
+.hero-title 
+  {
+     font-size: 4.5rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.7rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 2.1rem;
+    margin-bottom: 10rem;
+    white-space: nowrap;
+  }
+
+  .social-icons
+  {
+    font-size: 1.5rem;
+    margin-bottom: -3rem;
+    }
+
+      .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+      .card h3 {
+    font-size: 3.6rem; 
+}
+
+.card h4
+{
+    font-size: 2.5rem;
+}
+
+.card p
+{
+    font-size: 1.9rem;
+}
+
+.card li
+{
+    font-size: 1.9rem;
+}
+
+.f1{
+  font-size: 30px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.skill-list
+{
+  font-size: 1.8rem;
+}
+
+.grid {
+    gap: 3rem;
+    width: 95%;
+    justify-content: center; /* Center the grid */
+  }
+
+
+} 
+
+@media (max-width: 830px) {
+
+  .navbar a 
+  { 
+    font-size: 1.8rem; 
+  }
+  .navbar ul { gap: 3rem; flex-wrap: wrap;  flex-direction: grid;}
+
+
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .profile-pic
+  {
+    width: 480px; 
+    height: 590px; 
+    margin-top: -3rem;
+  }
+.hero-title 
+  {
+     font-size: 4.5rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.7rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 2.1rem;
+    margin-bottom: 10rem;
+    white-space: nowrap;
+  }
+
+  .social-icons
+  {
+    font-size: 1.5rem;
+    margin-bottom: -3rem;
+    }
+
+      .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+      .card h3 {
+    font-size: 3rem; 
+}
+
+.card h4
+{
+    font-size: 2.5rem;
+}
+
+.card p
+{
+    font-size: 1.9rem;
+}
+
+.card li
+{
+    font-size: 1.9rem;
+}
+
+.f1{
+  font-size: 30px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.skill-list
+{
+  font-size: 1.8rem;
+}
+
+.grid {
+    gap: 3rem;
+    width: 95%;
+    justify-content: center; /* Center the grid */
+  }
+
+
+} 
+
+
+
+@media (max-width: 768px) {
+   .navbar a 
+  { 
+    font-size: 1.6rem; 
+  }
+  .navbar ul { gap: 3.7rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 380px; 
+    height: 470px; 
+    margin-top: -3rem;
+  }
+.hero-title 
+  {
+     font-size: 4rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 3rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.6rem;
+    margin-top: 3.5rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .about-text
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 2.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.7rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 4.2rem; 
+  }
+
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .grid {
+    gap: 2rem;
+    width: 97%;
+    justify-content: center; /* Center the grid */
+  }
+
+  .contact-info
+  {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+  }
+
+.social-icons
+{
+    font-size: 1.5rem;
+    margin-bottom: -3rem;
+}
+
+      .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+      .card h3 {
+    font-size: 2.7rem; 
+}
+
+h2
+{
+    font-size: 3.9rem;
+}
+
+.card h4
+{
+    font-size: 2.2rem;
+}
+
+.card p
+{
+    font-size: 1.8rem;
+}
+
+.card li
+{
+    font-size: 1.8rem;
+}
+
+.f1{
+  font-size: 30px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 26px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 2.2rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+}
+
+@media (max-width: 540px) {
+  .navbar a 
+  { 
+    font-size: 1.3rem; 
+  }
+  .navbar ul { gap: 2rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 280px; 
+    height: 320px; 
+    margin-top: 0rem;
+  }
+.hero-title 
+  {
+     font-size: 2.9rem; 
+  }
+  
+    
+  .hero-subtitle 
+  {
+     font-size: 2rem; 
+  }
+  
+  .hero-btn {
+    font-size: 2.1rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+  }
+  
+  .section
+  {
+    max-width: 96%;
+  }
+  .about-text
+  {
+    font-size: 1rem;
+    margin-bottom: 10rem;
+    max-width:980px;
+  }
+  .resume-button
+  {
+    font-size: 1.9rem;
+    padding: 1.3rem 1.9rem;
+    border-radius: 24px;
+  }
+
+  .skill-list
+  {
+    font-size: 1.2rem;
+    margin-bottom: 10rem;
+  }
+
+  h2
+  {
+    font-size: 3.2rem; 
+  }
+
+    .card-content {
+    max-height: 10rem; /* Adjust for smaller screens */
+  }
+
+  .contact-info
+  {
+    font-size: 1.4rem;
+    margin-bottom: 10rem;
+  }
+
+.social-icons
+{
+    margin-bottom: -3rem;
+    margin-top: -3rem;
+}
+
+      .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+}
+
+
+      .card h3 {
+    font-size: 2.2rem; 
+}
+
+.card h4
+{
+    font-size: 1.8rem;
+}
+
+.card p
+{
+    font-size: 1.2rem;
+}
+
+.card li
+{
+    font-size: 1.2rem;
+}
+
+.btn,.toggle-btn
+{
+  font-size: 1.3rem;
+  padding: 1.2rem 1.9rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+.f1{
+  font-size: 21px !important;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.f2 {
+  font-size: 18px !important;
+  padding-bottom: 2rem;
+}
+
+#backToTop {
+  bottom: 3rem; /* Adjusted for larger screens */
+  right: 3rem; /* Adjusted for larger screens */
+  font-size: 1.6rem; /* Larger font size for better visibility */
+  padding: 1.2rem 1.5rem; /* Increased padding for larger button */
+}
+
+.grid
+{
+    gap: 3rem;
+    width: 85%;
+    justify-content: center; /* Center the grid */
+  }
+
+  .card
+  {
+    width: 72%; /* Ensure card fits grid */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Ensure content is spaced */
+    justify-self: center;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+   min-height: 80vh; /* Increase for mobile */
+    padding: 2rem 0;
+    padding-top: 5rem;
+  }
+  .resume-button
+  {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .hero-title { font-size: 2.2rem; margin-top: 250px; }
+  .hero-subtitle { font-size: 1.1rem; }
+.hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    max-width: 180px;
+    width: 100%;
+  }
+    .profile-pic { width: 180px; height: 180px; margin-bottom: 1rem; }
+  h2 { font-size: 2rem; }
+  .navbar ul { gap: 1rem; }
+  .social-icons { gap: 1rem; }
+  .social-icons a { padding: 0.5rem 1rem; }
+  .btn, .outline { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  .container {
+    width: 100%;
+    padding: 0 0.5rem;
+    margin: 1rem auto;
+  }
+  .about-text, .contact-info, .grid, .skill-list, .social-icons {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+  .card-content {
+    max-height: 7.2rem; /* Adjust for mobile */
+  }
+  .toggle-btn, .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 430px) {
+
+.navbar a 
+  { 
+    font-size: 1rem; 
+  }
+  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 300px; 
+    height: 340px; 
+    margin-top:1rem ;
+  }
+  .hero-title 
+  {
+    margin-top: 2rem;
+     font-size: 2.6rem; 
+  }
+  .hero-subtitle 
+  {
+     font-size: 2.3rem;
+     margin-top: 2rem; 
+  }
+
+  .hero-btn {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
+
+  h2
+  {
+    font-size: 2.4rem; 
+  }
+
+  .resume-button
+  {
+    font-size: 1.7rem;
+    padding: 1.3rem 1.9rem;
+    margin-top: 10rem;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+
+   .card-content {
+    max-height: 9rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card h4
+  {
+    font-size: 1.7rem;
+  }
+
+  .card p
+  {
+    font-size: 1.3rem;
+  }
+
+  .card li
+  {
+    font-size: 1.3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 97%;
+    justify-content: center; /* Center the grid */
+  }
+  
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .contact-info
+  {
+    font-size: 1.1rem;
+    white-space: nowrap; /* Allow text to wrap */
+  }
+
+  .social-icons {
+    margin-top: -8rem;
+    margin-bottom: -3rem;
+  }
+
+  .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+ .f1 {
+    font-size: 16px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .f2 {
+    font-size: 15px !important;
+    padding-bottom: 2rem;
+  }
+
+  .btn,.toggle-btn
+{
+  font-size: 1.4rem;
+  padding: 1rem 1.4rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+.card
+  {
+    width: 95%; /* Ensure card fits grid */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Ensure content is spaced */
+    justify-self: center;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 414px) {
+
+  .card{
+    width: 95%; /* Ensure card fits grid */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Ensure content is spaced */
+    justify-self: center;
+    height: 100%;
+  }
+.navbar a 
+  { 
+    font-size: 1rem; 
+  }
+  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 300px; 
+    height: 340px; 
+    margin-top:1rem ;
+  }
+  .hero-title 
+  {
+    margin-top: 2rem;
+     font-size: 2.3rem; 
+  }
+  .hero-subtitle 
+  {
+     font-size: 2.3rem;
+     margin-top: 2rem; 
+  }
+
+  .hero-btn {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
+
+  h2
+  {
+    font-size: 2.4rem; 
+  }
+
+  .resume-button
+  {
+    font-size: 1.7rem;
+    padding: 1.3rem 1.9rem;
+    margin-top: 10rem;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+
+   .card-content {
+    max-height: 9rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card h4
+  {
+    font-size: 1.7rem;
+  }
+
+  .card p
+  {
+    font-size: 1.3rem;
+  }
+
+  .card li
+  {
+    font-size: 1.3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 97%;
+    justify-content: center; /* Center the grid */
+  }
+  
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .contact-info
+  {
+    font-size: 1.1rem;
+    white-space: nowrap; /* Allow text to wrap */
+  }
+
+  .social-icons {
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+ .f1 {
+    font-size: 16px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .f2 {
+    font-size: 15px !important;
+    padding-bottom: 2rem;
+  }
+
+  .btn,.toggle-btn
+{
+  font-size: 1.2rem;
+  padding: 1rem 1.3rem;
+  border-radius: 24px;
+  max-width: fit-content;
+}
+
+}
+
+
+@media (max-width: 390px) {
+
+.navbar a 
+  { 
+    font-size: 0.9rem; 
+  }
+  .navbar ul { gap: 1.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 300px; 
+    height: 340px; 
+    margin-top:1rem ;
+  }
+  .hero-title 
+  {
+    margin-top: 1rem;
+     font-size: 2.3rem; 
+  }
+  .hero-subtitle 
+  {
+     font-size: 2.2rem;
+     margin-top: 2rem; 
+  }
+
+  .hero-btn {
+    font-size: 1.9rem;
+    margin-top: 1.6rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
+
+  h2
+  {
+    font-size: 2.4rem; 
+  }
+
+  .resume-button
+  {
+    font-size: 1.7rem;
+    padding: 1.3rem 1.9rem;
+    margin-top: 10rem;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+
+   .card-content {
+    max-height: 9rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card h4
+  {
+    font-size: 1.7rem;
+  }
+
+  .card p
+  {
+    font-size: 1.3rem;
+  }
+
+  .card li
+  {
+    font-size: 1.3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 97%;
+    justify-content: center; /* Center the grid */
+  }
+  
+  .section
+  {
+    max-width: 96%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+  .contact-info
+  {
+    font-size: 1rem;
+    white-space: nowrap; /* Allow text to wrap */
+  }
+
+  .social-icons {
+    margin-top: -8rem;
+    margin-bottom: -3rem;
+  }
+
+  .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+ .f1 {
+    font-size: 16px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .f2 {
+    font-size: 15px !important;
+    padding-bottom: 2rem;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+
   .navbar a 
   { 
     font-size: 0.9rem; 
@@ -760,7 +1994,7 @@ footer {
   .hero-title
   {
     margin-top: -1rem;
-     font-size: 1rem; 
+     font-size: 2.3rem; 
   }
 
   .hero-subtitle 
@@ -772,7 +2006,7 @@ footer {
 .skill-list
 {
     display: flex;
-    justify-content: center; 
+    justify-content: center; /* Center the skills */
     font-size: 0.9rem;
 }
   
@@ -782,9 +2016,9 @@ footer {
     margin: 1rem auto;
   }
 
-  /* .contact-info, .social-icons {
-    max-width: 100%; 
-  } */
+  .contact-info, .social-icons {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
 
   .hero-btn {
     font-size: 1.5rem;
@@ -812,7 +2046,7 @@ footer {
   .section
   {
     max-width: 100%;
-    padding: 6rem 0; 
+    padding: 6rem 0; /* Ensure padding is consistent */
   }
   .social-icons a {
     font-size: 0.9rem;
@@ -826,7 +2060,6 @@ footer {
   .contact-info
   {
     font-size: 1rem;
-    white-space: nowrap;
     margin-bottom: 10rem;
   }
 
@@ -847,15 +2080,15 @@ footer {
 .card li
 {
     font-size: 1rem;
-} 
+}
 
 
 
   #backToTop {
-    bottom: 1.5rem; 
-    right: 1.5rem; 
-    font-size: 1.2rem;
-    padding: 0.8rem 1rem;
+    bottom: 1.5rem; /* Adjusted for smaller screens */
+    right: 1.5rem; /* Adjusted for smaller screens */
+    font-size: 1.2rem; /* Larger font size for better visibility */
+    padding: 0.8rem 1rem; /* Increased padding for larger button */
   }
   
 
@@ -873,9 +2106,271 @@ footer {
     .section
   {
     max-width: 95%;
-    padding: 6rem 0;  
+    padding: 6rem 0; /* Ensure padding is consistent */
   }
 
 }
 
 
+@media (max-width: 360px) {
+  
+  .toggle-btn,.btn
+  {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 24px;
+    max-width: fit-content;
+  }
+  .navbar a 
+  { 
+    font-size: 0.8rem; 
+  }
+  .navbar ul { gap: 1rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .hero {
+   
+    margin-bottom: 4rem;
+  }
+  .profile-pic
+  {
+    width: 270px; 
+    height: 300px; 
+    margin-top:3rem ;
+  }
+  .hero-title 
+  {
+    margin-top: -1rem;
+     font-size: 2.1rem; 
+  }
+  .hero-subtitle 
+  {
+     font-size: 2rem;
+     margin-top: 0.5rem; 
+  }
+
+  .hero-btn {
+    font-size: 1.7rem !important;
+    margin-top: 1.6rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
+
+  h2
+  {
+    font-size: 2.4rem; 
+  }
+
+  .resume-button
+  {
+    font-size: 1.5rem;
+    padding: 1.3rem 1.9rem;
+    margin-top: 10rem;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+
+   .card-content {
+    max-height: 9rem;
+  }
+
+  .card h3 {
+    font-size: 1.6rem !important;
+  }
+
+  .card h4
+  {
+    font-size: 1.4rem !important;
+  }
+
+  .card p
+  {
+    font-size: 1rem !important;
+  }
+
+  .card li
+  {
+    font-size: 1rem  !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 97%;
+    justify-content: center; /* Center the grid */
+  }
+  
+  .section
+  {
+    max-width: 96%;
+    padding: -20rem -20rem !important; /* Ensure padding is consistent */
+  }
+
+  .contact-info
+  {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Allow text to wrap */
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+    margin-bottom:-3rem ;
+    margin-top: -4rem;
+  }
+
+  .social-icons a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem !important;
+  }
+
+ .f1 {
+    font-size: 14px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .f2 {
+    font-size: 13px !important;
+    padding-bottom: 2rem;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 344px) {
+
+.navbar a 
+  { 
+    font-size: 1rem; 
+  }
+  .navbar ul { gap: 0.5rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .hero-title
+  {
+    margin-top: -1rem;
+     font-size: 6rem; 
+  }
+
+  .hero-subtitle 
+  {
+     font-size: 1.3rem;
+     margin-top: 0.5rem; 
+  }
+
+  .hero-btn
+  {
+    font-size: 1rem;
+    margin-top: 2.6rem;
+    padding: 0.7rem 1.9rem;
+    width: 100%; /* Optional: Make it span full width on smaller devices */
+    max-width:fit-content;
+    margin-bottom: 8rem;
+  }
+
+.skill-list
+{
+    display: flex;
+    justify-content: center; /* Center the skills */
+    font-size: 0.9rem;
+}
+  
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .contact-info, .social-icons {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+
+  .hero-btn {
+    font-size: 1.5rem;
+    font-weight:bolder;
+    padding: 0.4rem 1.7rem;
+    max-width:fit-content;
+}
+  
+  .card {
+    padding: 1rem ;
+    width: 100%;
+
+  }
+
+  .card-content {
+    max-height: 6rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 87%;
+  }
+
+  .section
+  {
+    max-width: 100%;
+  }
+  .social-icons a {
+    font-size: 0.9rem;
+
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info
+  {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.4rem; 
+}
+
+.card h4
+{
+    font-size: 1.1rem;
+}
+
+.card p
+{
+    font-size: 0.8rem;
+}
+
+.card li
+{
+    font-size: 0.8rem;
+}
+
+    .hero {
+    min-height: 100vh; /* ✅ Full screen height */
+    background-size:cover;
+    background-position: center top; /* Or try 'center center' */
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+  }
+
+
+
+  #backToTop {
+    bottom: 1.5rem; /* Adjusted for smaller screens */
+    right: 1.5rem; /* Adjusted for smaller screens */
+    font-size: 1.2rem; /* Larger font size for better visibility */
+    padding: 0.8rem 1rem; /* Increased padding for larger button */
+  }
+  
+  .section
+  {
+    max-width: 95%;
+    padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+}
