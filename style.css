@@ -2123,7 +2123,7 @@ h2
   }
   .navbar a 
   { 
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
   }
   .navbar ul { gap: 1rem; flex-wrap: wrap;  flex-direction: grid;}
 
