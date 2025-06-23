@@ -741,6 +741,8 @@ footer {
 /* Responsive */
 
 
+
+
 @media (max-width: 1024px) {
 
   .navbar a 
@@ -753,7 +755,7 @@ footer {
   {
     width: 500px; 
     height: 590px; 
-    margin-top: -7rem;
+    margin-top: 3rem;
   }
 .hero-title 
   {
@@ -1290,7 +1292,7 @@ footer {
   {
     width: 380px; 
     height: 470px; 
-    margin-top: -3rem;
+    margin-top: 1rem;
   }
 .hero-title 
   {
@@ -1624,7 +1626,7 @@ h2
   }
   .hero-subtitle 
   {
-     font-size: 2.3rem;
+     font-size: 2.4rem;
      margin-top: 2rem; 
   }
 
@@ -1732,6 +1734,7 @@ h2
   }
 
 }
+
 
 @media (max-width: 414px) {
 
@@ -2150,7 +2153,7 @@ h2
 
   .hero-btn {
     font-size: 1.4rem !important;
-    margin-top: 1.6rem;
+    margin-top: 2rem;
     padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
     max-width:fit-content;
@@ -2246,25 +2249,32 @@ h2
 
 .navbar a 
   { 
-    font-size: 1rem; 
+    font-size: 0.8rem; 
   }
-  .navbar ul { gap: 0.5rem; flex-wrap: wrap;  flex-direction: grid;}
+  .navbar ul { gap: 1.1rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .profile-pic
+  {
+    width: 280px; 
+    height: 340px; 
+    margin-top:3rem ;
+  }
 
   .hero-title
   {
-    margin-top: -1rem;
-     font-size: 6rem; 
+    margin-top: 1rem;
+     font-size: 2rem; 
   }
 
   .hero-subtitle 
   {
      font-size: 1.3rem;
-     margin-top: 0.5rem; 
+     margin-top: 1rem; 
   }
 
   .hero-btn
   {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: 2.6rem;
     padding: 0.7rem 1.9rem;
     width: 100%; /* Optional: Make it span full width on smaller devices */
@@ -2350,13 +2360,6 @@ h2
     font-size: 0.8rem;
 }
 
-    .hero {
-    min-height: 100vh; /* ✅ Full screen height */
-    background-size:cover;
-    background-position: center top; /* Or try 'center center' */
-    padding-top: 10rem;
-    padding-bottom: 2rem;
-  }
 
 
 
@@ -2371,6 +2374,50 @@ h2
   {
     max-width: 95%;
     padding: 6rem 0; /* Ensure padding is consistent */
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .contact-info
+  {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    white-space: nowrap; /* Allow text to wrap */
+  }
+.navbar a 
+  { 
+    font-size: 0.8rem; 
+  }
+  .navbar ul { gap: 1rem; flex-wrap: wrap;  flex-direction: grid;}
+
+  .hero-subtitle
+  {
+      font-size: 1.2rem;
+      margin-top: 1rem; 
+  }
+
+  .skill-list
+  {
+    display: flex;
+    justify-content: center; /* Center the skills */
+    font-size: 0.8rem;
+  }
+  .social-icons
+  {
+    margin-top: auto;
+  }
+
+
+  .f1{
+    font-size: 12px !important;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .f2{
+    font-size: 11px !important;
+    padding-bottom: 2rem;
   }
 
 }
