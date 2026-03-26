@@ -456,8 +456,13 @@ html.scrolled .site-header {
 
 .bullets {
   margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
+  padding-left: 1.15rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.bullets li::marker {
+  color: rgba(109, 94, 252, 0.95);
+  font-size: 1.1em;
 }
 
 .bullets li {
@@ -466,6 +471,15 @@ html.scrolled .site-header {
 
 .bullets.compact li {
   margin: 6px 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .bullets {
+    color: rgba(10, 20, 40, 0.78);
+  }
+  .bullets li::marker {
+    color: rgba(109, 94, 252, 0.95);
+  }
 }
 
 .about-grid {
