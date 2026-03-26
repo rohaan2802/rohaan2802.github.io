@@ -568,6 +568,12 @@ html.scrolled .site-header {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 2px;
+  align-items: center;
+}
+
+.project-actions .btn {
+  /* Keep buttons visually consistent across different project cards */
+  min-width: 170px;
 }
 
 .project-details summary {
