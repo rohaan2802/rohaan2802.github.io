@@ -18,7 +18,7 @@
 
     <meta property="og:title" content="Mohammad Rohaan — Portfolio" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/resume_img_2.png" />
+    <meta property="og:image" content="images/resume_img.png" />
     <meta property="og:url" content="https://rohaan2802.github.io/" />
     <meta
       property="og:description"
@@ -27,7 +27,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mohammad Rohaan — Portfolio" />
-    <meta name="twitter:image" content="images/resume_img_2.png" />
+    <meta name="twitter:image" content="images/resume_img.png" />
     <meta
       name="twitter:description"
       content="AI/ML + systems-minded engineering. Featured projects, resume, and contact."
@@ -116,7 +116,7 @@
           <div class="hero-card" aria-label="Profile">
             <div class="hero-photo">
               <img
-                src="images/resume_img_2.png"
+                src="images/resume_img.png"
                 alt="Portrait of Mohammad Rohaan"
                 loading="eager"
                 width="640"
@@ -543,6 +543,48 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
           });
         }
+
+        /** Desktop browsers: open Gmail compose (To / subject / body). Touch-first devices: keep mailto (native Mail app). From is always the viewer's Gmail account. */
+        function parseMailto(href) {
+          const raw = href.replace(/^mailto:/i, "");
+          const q = raw.indexOf("?");
+          const addrPart = q === -1 ? raw : raw.slice(0, q);
+          const to = decodeURIComponent(addrPart.replace(/\+/g, " "));
+          let subject = "";
+          let body = "";
+          if (q !== -1) {
+            const params = new URLSearchParams(raw.slice(q + 1));
+            subject = params.get("subject") || "";
+            body = params.get("body") || "";
+          }
+          return { to, subject, body };
+        }
+
+        function gmailComposeUrl(to, subject, body) {
+          const p = new URLSearchParams();
+          p.set("view", "cm");
+          p.set("fs", "1");
+          p.set("to", to);
+          if (subject) p.set("su", subject);
+          if (body) p.set("body", body);
+          return "https://mail.google.com/mail/?" + p.toString();
+        }
+
+        function shouldUseGmailCompose() {
+          return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        }
+
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            if (!shouldUseGmailCompose()) return;
+            if (e.defaultPrevented || e.button !== 0) return;
+            e.preventDefault();
+            var parsed = parseMailto(a.href);
+            var url = gmailComposeUrl(parsed.to, parsed.subject, parsed.body);
+            var w = window.open(url, "_blank", "noopener,noreferrer");
+            if (w) w.opener = null;
+          });
+        });
 
       })();
     </script>
