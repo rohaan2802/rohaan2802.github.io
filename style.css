@@ -682,10 +682,19 @@ html.scrolled .site-header {
   text-decoration: underline;
   text-decoration-color: rgba(109, 94, 252, 0.35);
   text-underline-offset: 3px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(109, 94, 252, 0.2);
+  touch-action: manipulation;
 }
 
 .contact-v:hover {
   text-decoration-color: rgba(109, 94, 252, 0.8);
+}
+
+.contact-v[href^="tel:"] {
+  /* Ensure tel: links stay clickable (some layouts accidentally block taps) */
+  position: relative;
+  z-index: 1;
 }
 
 .profile-links {
