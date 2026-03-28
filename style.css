@@ -763,8 +763,11 @@ html.scrolled .site-header {
   appearance: none;
   border: 2px solid transparent;
   box-sizing: border-box;
+  /* Solid underlay: shows if multi-layer clip fails (common on mobile WebKit) */
+  background-color: rgb(14, 18, 32);
   background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
   background-origin: border-box;
+  -webkit-background-clip: padding-box, border-box;
   background-clip: padding-box, border-box;
   box-shadow: var(--shadow);
   cursor: pointer;
@@ -809,8 +812,10 @@ html.scrolled .site-header {
   .to-top {
     --to-top-fill: rgba(255, 255, 255, 0.99);
     --to-top-fill-hover: #ffffff;
+    background-color: #ffffff;
     background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
     background-origin: border-box;
+    -webkit-background-clip: padding-box, border-box;
     background-clip: padding-box, border-box;
     box-shadow: var(--shadow);
   }
@@ -818,6 +823,54 @@ html.scrolled .site-header {
   .to-top:hover {
     background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
       linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  }
+}
+
+/* Touch / coarse pointer: explicit inner fill + icon (multi-layer clip & gradient text often fail on mobile WebKit) */
+@media (hover: none), (any-pointer: coarse) {
+  .to-top {
+    background-color: rgb(14, 18, 32);
+    background-image: linear-gradient(rgb(14, 18, 32), rgb(14, 18, 32)), var(--accent-gradient-border);
+    -webkit-background-clip: padding-box, border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .to-top:active {
+    background-image: linear-gradient(rgb(22, 26, 44), rgb(22, 26, 44)),
+      linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  }
+
+  .to-top i {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: var(--accent);
+    -webkit-text-fill-color: var(--accent);
+  }
+
+  .to-top:hover i {
+    background: none;
+    color: rgb(130, 118, 255);
+    -webkit-text-fill-color: rgb(130, 118, 255);
+  }
+}
+
+@media (prefers-color-scheme: light) and (hover: none),
+  (prefers-color-scheme: light) and (any-pointer: coarse) {
+  .to-top {
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff), var(--accent-gradient-border);
+  }
+
+  .to-top:active {
+    background-image: linear-gradient(#f8fafc, #f8fafc),
+      linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  }
+
+  .to-top i,
+  .to-top:hover i {
+    color: var(--accent);
+    -webkit-text-fill-color: var(--accent);
   }
 }
 
