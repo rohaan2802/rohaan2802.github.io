@@ -498,9 +498,12 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="footer-copy">© <span id="year"></span> Mohammad Rohaan. Built for clarity, speed, and credibility.</p>
-        <a class="footer-top" href="#top">Back to top</a>
       </div>
     </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top" hidden>
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
     <script>
       (function () {
@@ -509,6 +512,7 @@
 
         const nav = document.getElementById("site-nav");
         const toggle = document.querySelector(".nav-toggle");
+        const toTop = document.querySelector(".to-top");
 
         function setNavOpen(isOpen) {
           if (!nav || !toggle) return;
@@ -532,9 +536,16 @@
         function onScroll() {
           const y = window.scrollY || document.documentElement.scrollTop || 0;
           document.documentElement.classList.toggle("scrolled", y > 16);
+          if (toTop) toTop.hidden = y < 600;
         }
         window.addEventListener("scroll", onScroll, { passive: true });
         onScroll();
+
+        if (toTop) {
+          toTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        }
 
         /** Desktop browsers: open Gmail compose (To / subject / body). Touch-first devices: keep mailto (native Mail app). From is always the viewer's Gmail account. */
         function parseMailto(href) {

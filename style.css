@@ -12,8 +12,11 @@
   --accent: #6d5efc;
   --accent-2: #36d1dc;
   --accent-warm: #f7b733;
-  /* Shared purple → cyan (hero accent text) */
+  /* Shared purple → cyan (hero accent + back-to-top icon / frame) */
   --accent-gradient: linear-gradient(90deg, rgb(109, 94, 252), rgb(54, 209, 220));
+  --accent-gradient-border: linear-gradient(135deg, rgb(109, 94, 252), rgb(54, 209, 220));
+  --to-top-fill: rgba(14, 18, 32, 0.96);
+  --to-top-fill-hover: rgba(22, 26, 44, 0.99);
 
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -510,7 +513,7 @@ html.scrolled .site-header {
 .nav-cta:focus-visible,
 .icon-link:focus-visible,
 .profile-link:focus-visible,
-.footer-top:focus-visible {
+.to-top:focus-visible {
   outline: 2px solid rgba(109, 94, 252, 0.75);
   outline-offset: 2px;
 }
@@ -745,16 +748,92 @@ html.scrolled .site-header {
   color: var(--subtle);
 }
 
-.footer-top {
-  color: var(--muted);
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid transparent;
+/* Back to top: gradient frame (always visible; avoids native button border bugs) + same accent as .hero-accent */
+.to-top {
+  position: fixed;
+  z-index: 60;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms var(--ease), background-image 180ms var(--ease), box-shadow 180ms var(--ease);
 }
 
-.footer-top:hover {
-  border-color: var(--border);
-  background: var(--bg-elev);
+.to-top:hover {
+  background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
+    linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  box-shadow:
+    0 0 0 1px rgba(109, 94, 252, 0.35),
+    var(--shadow);
+}
+
+.to-top:active {
+  transform: translateY(1px);
+}
+
+.to-top i {
+  font-size: 1rem;
+  line-height: 1;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.to-top:hover i {
+  background: linear-gradient(90deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+  .to-top {
+    --to-top-fill: rgba(255, 255, 255, 0.99);
+    --to-top-fill-hover: #ffffff;
+    background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: var(--shadow);
+  }
+
+  .to-top:hover {
+    background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
+      linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  }
+}
+
+@media (forced-colors: active) {
+  .to-top {
+    border: 2px solid ButtonText;
+    background: ButtonFace;
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .to-top i {
+    background: none;
+    -webkit-text-fill-color: ButtonText;
+    color: ButtonText;
+  }
 }
 
 /* Responsive */
