@@ -12,11 +12,10 @@
   --accent: #6d5efc;
   --accent-2: #36d1dc;
   --accent-warm: #f7b733;
-  /* Shared purple → cyan (hero accent + back-to-top icon / frame) */
-  --accent-gradient: linear-gradient(90deg, rgb(109, 94, 252), rgb(54, 209, 220));
-  --accent-gradient-border: linear-gradient(135deg, rgb(109, 94, 252), rgb(54, 209, 220));
-  --to-top-fill: rgba(14, 18, 32, 0.96);
-  --to-top-fill-hover: rgba(22, 26, 44, 0.99);
+  /* One flat color for hero accent phrase + chevron (avoids wrap/clip making “discipline” look different) */
+  --accent-text-solid: #c9bfff;
+  --to-top-fill: rgb(22, 26, 44);
+  --to-top-fill-hover: rgb(30, 35, 58);
 
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -38,6 +37,9 @@
     --subtle: rgba(10, 20, 40, 0.56);
     --border: rgba(10, 20, 40, 0.12);
     --shadow: 0 18px 50px rgba(10, 20, 40, 0.12);
+    --accent-text-solid: #5244d8;
+    --to-top-fill: #ffffff;
+    --to-top-fill-hover: #f4f5fb;
   }
 }
 
@@ -296,11 +298,10 @@ html.scrolled .site-header {
 }
 
 .hero-accent {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-text-solid);
+  /* Solid fill so every word (including after line wrap) matches */
+  background: none;
+  -webkit-text-fill-color: currentColor;
 }
 
 .hero-subtitle {
@@ -761,7 +762,7 @@ html.scrolled .site-header {
   background: var(--bg-elev);
 }
 
-/* Back to top: gradient frame (always visible; avoids native button border bugs) + same accent as .hero-accent */
+/* Back to top: solid border + fill (reliable in all browsers; no gradient-border tricks) */
 .to-top {
   position: fixed;
   z-index: 60;
@@ -774,25 +775,28 @@ html.scrolled .site-header {
   padding: 0;
   -webkit-appearance: none;
   appearance: none;
-  border: 2px solid transparent;
   box-sizing: border-box;
-  background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: var(--shadow);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--accent);
+  background-color: var(--to-top-fill);
+  background-image: none;
+  box-shadow:
+    0 0 0 1px rgba(54, 209, 220, 0.45),
+    var(--shadow);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 120ms var(--ease), background-image 180ms var(--ease), box-shadow 180ms var(--ease);
+  transition: transform 120ms var(--ease), background-color 180ms var(--ease), border-color 180ms var(--ease), box-shadow 180ms var(--ease);
 }
 
 .to-top:hover {
-  background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
-    linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  background-color: var(--to-top-fill-hover);
+  border-color: var(--accent-2);
   box-shadow:
-    0 0 0 1px rgba(109, 94, 252, 0.35),
+    0 0 0 2px rgba(109, 94, 252, 0.5),
     var(--shadow);
 }
 
@@ -803,48 +807,39 @@ html.scrolled .site-header {
 .to-top i {
   font-size: 1rem;
   line-height: 1;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-text-solid);
+  background: none;
+  -webkit-text-fill-color: currentColor;
 }
 
 .to-top:hover i {
-  background: linear-gradient(90deg, rgb(130, 118, 255), rgb(78, 228, 236));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-2);
 }
 
 @media (prefers-color-scheme: light) {
   .to-top {
-    --to-top-fill: rgba(255, 255, 255, 0.99);
-    --to-top-fill-hover: #ffffff;
-    background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    box-shadow: var(--shadow);
+    border-color: var(--accent);
+    box-shadow:
+      0 0 0 1px rgba(109, 94, 252, 0.35),
+      var(--shadow);
   }
 
   .to-top:hover {
-    background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
-      linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+    border-color: #4338ca;
+    box-shadow:
+      0 0 0 2px rgba(54, 209, 220, 0.4),
+      var(--shadow);
   }
 }
 
 @media (forced-colors: active) {
   .to-top {
-    border: 2px solid ButtonText;
+    border: 3px solid ButtonText;
     background: ButtonFace;
-    background-image: none;
     box-shadow: none;
   }
 
   .to-top i {
-    background: none;
-    -webkit-text-fill-color: ButtonText;
     color: ButtonText;
   }
 }
