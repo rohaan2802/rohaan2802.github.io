@@ -295,12 +295,39 @@ html.scrolled .site-header {
   line-height: 1.06;
 }
 
+/* Gradient text: span must contain only text (no <br> inside) for consistent clip on iOS/Android WebKit */
 .hero-accent {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  display: inline;
+  background-color: transparent;
+  background-image: var(--accent-gradient);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  /* Fallback if clipping is unsupported (avoids invisible text) */
+  color: rgb(109, 94, 252);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .hero-accent {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* Layer promotion: fixes missing/wrong gradient paint on some mobile viewports */
+    transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@media (forced-colors: active) {
+  .hero-accent {
+    background-image: none;
+    transform: none;
+    color: LinkText;
+    -webkit-text-fill-color: LinkText;
+  }
 }
 
 .hero-subtitle {
