@@ -12,11 +12,9 @@
   --accent: #6d5efc;
   --accent-2: #36d1dc;
   --accent-warm: #f7b733;
-  /* Shared purple → cyan (hero accent + back-to-top icon / frame) */
+  /* Gradient for buttons/decor; hero line uses solid so every word matches */
   --accent-gradient: linear-gradient(90deg, rgb(109, 94, 252), rgb(54, 209, 220));
-  --accent-gradient-border: linear-gradient(135deg, rgb(109, 94, 252), rgb(54, 209, 220));
-  --to-top-fill: rgba(14, 18, 32, 0.96);
-  --to-top-fill-hover: rgba(22, 26, 44, 0.99);
+  --accent-heading-text: #c4bdfc;
 
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -38,6 +36,7 @@
     --subtle: rgba(10, 20, 40, 0.56);
     --border: rgba(10, 20, 40, 0.12);
     --shadow: 0 18px 50px rgba(10, 20, 40, 0.12);
+    --accent-heading-text: #4f46d8;
   }
 }
 
@@ -296,11 +295,8 @@ html.scrolled .site-header {
 }
 
 .hero-accent {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-heading-text);
+  -webkit-text-fill-color: var(--accent-heading-text);
 }
 
 .hero-subtitle {
@@ -761,7 +757,10 @@ html.scrolled .site-header {
   background: var(--bg-elev);
 }
 
-/* Back to top: gradient frame (always visible; avoids native button border bugs) + same accent as .hero-accent */
+/*
+ * Back to top: use <a> not <button> — native form buttons often ignore border/background until hover in some browsers.
+ * Solid border + background-color so default state is always obvious.
+ */
 .to-top {
   position: fixed;
   z-index: 60;
@@ -772,27 +771,26 @@ html.scrolled .site-header {
   border-radius: 16px;
   margin: 0;
   padding: 0;
-  -webkit-appearance: none;
-  appearance: none;
-  border: 2px solid transparent;
   box-sizing: border-box;
-  background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+  border: 3px solid #6d5efc;
+  background-color: rgba(16, 20, 36, 0.98);
+  color: var(--accent-heading-text);
   box-shadow: var(--shadow);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 120ms var(--ease), background-image 180ms var(--ease), box-shadow 180ms var(--ease);
+  transition: transform 120ms var(--ease), background-color 180ms var(--ease), border-color 180ms var(--ease), color 180ms var(--ease), box-shadow 180ms var(--ease);
 }
 
 .to-top:hover {
-  background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
-    linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+  border-color: #36d1dc;
+  background-color: rgba(22, 28, 48, 1);
+  color: #e8e4ff;
   box-shadow:
-    0 0 0 1px rgba(109, 94, 252, 0.35),
+    0 0 0 1px rgba(54, 209, 220, 0.45),
     var(--shadow);
 }
 
@@ -803,49 +801,34 @@ html.scrolled .site-header {
 .to-top i {
   font-size: 1rem;
   line-height: 1;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-.to-top:hover i {
-  background: linear-gradient(90deg, rgb(130, 118, 255), rgb(78, 228, 236));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
 }
 
 @media (prefers-color-scheme: light) {
   .to-top {
-    --to-top-fill: rgba(255, 255, 255, 0.99);
-    --to-top-fill-hover: #ffffff;
-    background-image: linear-gradient(var(--to-top-fill), var(--to-top-fill)), var(--accent-gradient-border);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    box-shadow: var(--shadow);
+    border-color: #6d5efc;
+    background-color: rgba(255, 255, 255, 0.98);
+    color: var(--accent-heading-text);
   }
 
   .to-top:hover {
-    background-image: linear-gradient(var(--to-top-fill-hover), var(--to-top-fill-hover)),
-      linear-gradient(135deg, rgb(130, 118, 255), rgb(78, 228, 236));
+    background-color: #ffffff;
+    border-color: #36d1dc;
+    color: #4338ca;
   }
 }
 
 @media (forced-colors: active) {
   .to-top {
-    border: 2px solid ButtonText;
-    background: ButtonFace;
-    background-image: none;
+    border: 3px solid ButtonText;
+    background-color: ButtonFace;
+    color: ButtonText;
     box-shadow: none;
   }
 
   .to-top i {
-    background: none;
-    -webkit-text-fill-color: ButtonText;
-    color: ButtonText;
+    color: inherit;
   }
 }
 
