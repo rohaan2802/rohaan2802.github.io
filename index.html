@@ -45,7 +45,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css?v=8" />
+    <link rel="stylesheet" href="style.css?v=9" />
 
     <title>Mohammad Rohaan — Portfolio</title>
   </head>
@@ -533,12 +533,23 @@
           });
         }
 
+        function scrollY() {
+          return (
+            window.scrollY ||
+            window.pageYOffset ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop ||
+            0
+          );
+        }
+
         function onScroll() {
-          const y = window.scrollY || document.documentElement.scrollTop || 0;
+          const y = scrollY();
           document.documentElement.classList.toggle("scrolled", y > 16);
           if (toTop) toTop.hidden = y < 600;
         }
         window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll, { passive: true });
         onScroll();
 
         if (toTop) {

@@ -916,6 +916,13 @@ html.scrolled .site-header {
   }
 }
 
+/* [hidden] must win: .to-top { display: inline-flex } otherwise overrides UA and the button stays visible at scroll 0 (common on mobile) */
+.to-top[hidden] {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Responsive */
 @media (max-width: 920px) {
   .hero-grid {
