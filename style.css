@@ -12,9 +12,8 @@
   --accent: #6d5efc;
   --accent-2: #36d1dc;
   --accent-warm: #f7b733;
-  /* Gradient for buttons/decor; hero line uses solid so every word matches */
+  /* Shared purple → cyan (hero accent text) */
   --accent-gradient: linear-gradient(90deg, rgb(109, 94, 252), rgb(54, 209, 220));
-  --accent-heading-text: #c4bdfc;
 
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -36,7 +35,6 @@
     --subtle: rgba(10, 20, 40, 0.56);
     --border: rgba(10, 20, 40, 0.12);
     --shadow: 0 18px 50px rgba(10, 20, 40, 0.12);
-    --accent-heading-text: #4f46d8;
   }
 }
 
@@ -295,8 +293,11 @@ html.scrolled .site-header {
 }
 
 .hero-accent {
-  color: var(--accent-heading-text);
-  -webkit-text-fill-color: var(--accent-heading-text);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
@@ -509,8 +510,7 @@ html.scrolled .site-header {
 .nav-cta:focus-visible,
 .icon-link:focus-visible,
 .profile-link:focus-visible,
-.footer-top:focus-visible,
-.to-top:focus-visible {
+.footer-top:focus-visible {
   outline: 2px solid rgba(109, 94, 252, 0.75);
   outline-offset: 2px;
 }
@@ -755,81 +755,6 @@ html.scrolled .site-header {
 .footer-top:hover {
   border-color: var(--border);
   background: var(--bg-elev);
-}
-
-/*
- * Back to top: use <a> not <button> — native form buttons often ignore border/background until hover in some browsers.
- * Solid border + background-color so default state is always obvious.
- */
-.to-top {
-  position: fixed;
-  z-index: 60;
-  right: max(16px, env(safe-area-inset-right));
-  bottom: max(16px, env(safe-area-inset-bottom));
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 3px solid #6d5efc;
-  background-color: rgba(16, 20, 36, 0.98);
-  color: var(--accent-heading-text);
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 120ms var(--ease), background-color 180ms var(--ease), border-color 180ms var(--ease), color 180ms var(--ease), box-shadow 180ms var(--ease);
-}
-
-.to-top:hover {
-  border-color: #36d1dc;
-  background-color: rgba(22, 28, 48, 1);
-  color: #e8e4ff;
-  box-shadow:
-    0 0 0 1px rgba(54, 209, 220, 0.45),
-    var(--shadow);
-}
-
-.to-top:active {
-  transform: translateY(1px);
-}
-
-.to-top i {
-  font-size: 1rem;
-  line-height: 1;
-  color: inherit;
-  -webkit-text-fill-color: inherit;
-}
-
-@media (prefers-color-scheme: light) {
-  .to-top {
-    border-color: #6d5efc;
-    background-color: rgba(255, 255, 255, 0.98);
-    color: var(--accent-heading-text);
-  }
-
-  .to-top:hover {
-    background-color: #ffffff;
-    border-color: #36d1dc;
-    color: #4338ca;
-  }
-}
-
-@media (forced-colors: active) {
-  .to-top {
-    border: 3px solid ButtonText;
-    background-color: ButtonFace;
-    color: ButtonText;
-    box-shadow: none;
-  }
-
-  .to-top i {
-    color: inherit;
-  }
 }
 
 /* Responsive */

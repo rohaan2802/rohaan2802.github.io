@@ -502,10 +502,6 @@
       </div>
     </footer>
 
-    <a class="to-top" href="#top" aria-label="Back to top" hidden>
-      <i class="fas fa-chevron-up" aria-hidden="true"></i>
-    </a>
-
     <script>
       (function () {
         const yearEl = document.getElementById("year");
@@ -513,7 +509,6 @@
 
         const nav = document.getElementById("site-nav");
         const toggle = document.querySelector(".nav-toggle");
-        const toTop = document.querySelector(".to-top");
 
         function setNavOpen(isOpen) {
           if (!nav || !toggle) return;
@@ -537,7 +532,6 @@
         function onScroll() {
           const y = window.scrollY || document.documentElement.scrollTop || 0;
           document.documentElement.classList.toggle("scrolled", y > 16);
-          if (toTop) toTop.hidden = y < 600;
         }
         window.addEventListener("scroll", onScroll, { passive: true });
         onScroll();
