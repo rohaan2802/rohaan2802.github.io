@@ -570,10 +570,16 @@
           );
         }
 
+        /** Show after a small scroll on any screen: ~17% of viewport height, between 100px and 300px */
+        function backToTopRevealPx() {
+          var vh = window.innerHeight || document.documentElement.clientHeight || 640;
+          return Math.max(100, Math.min(300, Math.round(vh * 0.17)));
+        }
+
         function onScroll() {
           const y = scrollY();
           document.documentElement.classList.toggle("scrolled", y > 16);
-          if (toTop) toTop.hidden = y < 600;
+          if (toTop) toTop.hidden = y < backToTopRevealPx();
         }
         window.addEventListener("scroll", onScroll, { passive: true });
         window.addEventListener("resize", onScroll, { passive: true });
