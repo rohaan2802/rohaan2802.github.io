@@ -974,10 +974,17 @@ html.scrolled .site-header {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Profile card first on phones/tablets, intro copy below */
   .hero-card {
+    order: -1;
     max-width: 520px;
     width: 100%;
     margin-inline: auto;
+  }
+
+  .hero-copy {
+    order: 0;
   }
   .contact-grid {
     grid-template-columns: 1fr;
