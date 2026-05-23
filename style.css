@@ -1013,6 +1013,11 @@ html.scrolled .site-header {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
