@@ -567,8 +567,28 @@ html.scrolled .site-header {
 }
 
 .btn-ghost {
-  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+@media (prefers-color-scheme: light) {
+  .btn-ghost {
+    border-color: rgba(10, 20, 40, 0.14);
+    background: rgba(10, 20, 40, 0.06);
+    box-shadow: 0 8px 20px rgba(10, 20, 40, 0.06);
+  }
+
+  .btn-ghost:hover {
+    background: rgba(10, 20, 40, 0.09);
+    border-color: rgba(10, 20, 40, 0.2);
+  }
 }
 
 /* Projects */
