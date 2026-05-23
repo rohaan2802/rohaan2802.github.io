@@ -1004,10 +1004,33 @@ html.scrolled .site-header {
 
   .hero-actions {
     order: 5;
+    flex-wrap: nowrap;
+    gap: 8px;
   }
 
   .hero-metrics {
     order: 6;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 10px 8px;
+    font-size: clamp(0.72rem, 2.6vw, 0.92rem);
+    white-space: nowrap;
+  }
+
+  .metric {
+    padding: 10px 8px;
+  }
+
+  .metric-value {
+    font-size: clamp(0.78rem, 2.8vw, 0.95rem);
+  }
+
+  .metric-label {
+    font-size: clamp(0.68rem, 2.4vw, 0.85rem);
   }
 
   .contact-grid {
@@ -1062,10 +1085,6 @@ html.scrolled .site-header {
     text-align: center;
   }
 
-  .hero-metrics {
-    grid-template-columns: 1fr;
-  }
-
   .section {
     padding: 48px 0;
   }
@@ -1080,14 +1099,12 @@ html.scrolled .site-header {
     font-size: clamp(1.72rem, 7.5vw, 2.05rem);
   }
 
-  .hero-actions,
   .card-actions,
   .project-actions {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .hero-actions .btn,
   .card-actions .btn,
   .project-actions .btn {
     width: 100%;
