@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Portfolio (Chrome)",
+      "url": "http://127.0.0.1:8080",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "start-dev-server",
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "SERVER_READY:(https?://\\S+)",
+        "uriFormat": "%s",
+        "killOnServerStop": true
+      }
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Debug Portfolio (Edge)",
+      "url": "http://127.0.0.1:8080",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "start-dev-server",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "SERVER_READY:(https?://\\S+)",
+        "uriFormat": "%s",
+        "killOnServerStop": true
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Dev Server Only",
+      "runtimeExecutable": "node",
+      "program": "${workspaceFolder}/scripts/dev-server.mjs",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

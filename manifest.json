@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#0b1220",
   "theme_color": "#0b1220",
-  "description": "Personal portfolio for Mohammad Rohaan: software engineering, AI/ML, robotics, and systems projects.",
+  "description": "BSCS portfolio: software engineering, AI/ML, data science, cybersecurity fundamentals, embedded robotics (ESP32, Arduino, Raspberry Pi), and systems projects.",
   "icons": [
     {
       "src": "images/icon6.png",
@@ -19,4 +19,3 @@
     }
   ]
 }
-
