@@ -971,21 +971,45 @@ html.scrolled .site-header {
 }
 
 @media (max-width: 920px) {
+  /* Stacked hero: profile → headline lines → everything else */
   .hero-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
   }
 
-  /* Profile card first on phones/tablets, intro copy below */
+  .hero-copy {
+    display: contents;
+  }
+
   .hero-card {
-    order: -1;
+    order: 1;
     max-width: 520px;
     width: 100%;
     margin-inline: auto;
   }
 
-  .hero-copy {
-    order: 0;
+  .eyebrow {
+    order: 2;
   }
+
+  .hero-title {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .hero-subtitle {
+    order: 4;
+  }
+
+  .hero-actions {
+    order: 5;
+  }
+
+  .hero-metrics {
+    order: 6;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
