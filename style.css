@@ -567,6 +567,13 @@ html.scrolled .site-header {
   color: var(--text);
 }
 
+.btn-live {
+  border-color: rgba(16, 185, 129, 0.7);
+  background: linear-gradient(135deg, #10b981, #06b6d4);
+  color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.22);
+}
+
 .btn-ghost {
   border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);

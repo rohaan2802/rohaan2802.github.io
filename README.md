@@ -230,7 +230,7 @@ Copy an existing `<article class="project-card">` block in `#projects`, then upd
 ### CSS cache busting
 
 ```html
-<link rel="stylesheet" href="style.css?v=21" />
+<link rel="stylesheet" href="style.css?v=22" />
 ```
 
 Increment `v=` after CSS changes so returning visitors get fresh styles.
