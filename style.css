@@ -653,6 +653,16 @@ html.scrolled .site-header {
   text-align: center;
 }
 
+/* Two CTAs (Live demo + Code) share the row; single-button cards stay unchanged */
+.project-actions-dual {
+  width: 100%;
+}
+
+.project-actions-dual .btn {
+  flex: 1 1 calc(50% - 5px);
+  min-width: 0;
+}
+
 .project-details summary {
   cursor: pointer;
   color: var(--text);
@@ -1113,6 +1123,11 @@ html.scrolled .site-header {
     width: 100%;
     white-space: normal;
     min-width: 0;
+  }
+
+  .project-actions-dual .btn {
+    flex: 1 1 auto;
+    width: 100%;
   }
 
   .project-top {

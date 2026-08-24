@@ -32,7 +32,7 @@ Modern, fast, responsive personal portfolio and brand site for **Mohammad Rohaan
 
 ## Overview
 
-This repository hosts a single-page portfolio that presents software engineering, AI/ML, data science, embedded robotics, and systems work. The site prioritizes:
+This repository hosts a single-page portfolio that presents software engineering, AI/ML, data science, a live AI voice agent, and systems work. The site prioritizes:
 
 - **Clarity** — scannable sections (About, Work, Stack, Contact) with expandable project details
 - **Speed** — vanilla HTML/CSS/JS, no bundler; cache-busted CSS via query string
@@ -93,7 +93,8 @@ rohaan2802.github.io/
 ├── resume/
 │   └── Mohammad_Rohaan_Resume.pdf
 ├── scripts/
-│   └── dev-server.mjs      # Static file server (dynamic port)
+│   ├── dev-server.mjs      # Static file server (dynamic port)
+│   └── build-resume.py     # One-page resume PDF generator
 └── .vscode/
     ├── launch.json         # Chrome/Edge debug + dev server task
     └── tasks.json          # Background npm dev task with SERVER_READY matcher
@@ -107,8 +108,8 @@ rohaan2802.github.io/
 |---------|-----|---------|
 | **Hero** | — | Headline, availability, profile card, social links, CTA buttons |
 | **About** | `#about` | What I do, hardware/robotics, career goals |
-| **Featured projects** | `#projects` | Top 10 GitHub repos with tags and expandable “What I built” |
-| **Skills** | `#skills` | 12 skill-area cards (CS fundamentals → web/Java stack) |
+| **Featured projects** | `#projects` | Six GitHub projects with tags, expandable “What I built”, and a live demo on the voice agent |
+| **Skills** | `#skills` | Four stack cards: languages, AI/ML, software engineering, systems/embedded |
 | **Contact** | `#contact` | Email, university email, phone, LinkedIn, GitHub, WhatsApp |
 
 Primary navigation and footer live in `index.html`. All copy, project cards, and skill tags are edited there.
@@ -119,18 +120,14 @@ Primary navigation and footer live in `index.html`. All copy, project cards, and
 
 Curated from [github.com/rohaan2802](https://github.com/rohaan2802):
 
-| Project | Focus | Repository |
-|---------|-------|------------|
+| Project | Focus | Links |
+|---------|-------|-------|
+| AI Voice Cold-Calling Agent | Next.js, VAPI, Groq, Deepgram | [Live](https://web-rouge-xi-23.vercel.app) · [Code](https://github.com/rohaan2802/Cold-Calling-Agent) |
 | Intelligent Reading Comprehension & Quiz Generator | NLP, scikit-learn, Streamlit | [AI_Quiz_Generator](https://github.com/rohaan2802/AI_Quiz_Generator) |
-| Shuttlecock Detection for Robotic Collection | YOLOv8, computer vision, robotics | [ShuttleCock-Detection](https://github.com/rohaan2802/ShuttleCock-Detection) |
-| K-means with Triangle Inequality | C++, OpenMP, parallel computing | [KMeanTriangleInequality](https://github.com/rohaan2802/KMeanTriangleInequality) |
 | Library Management System (LibraryMS) | Java 17, Spring Boot, MySQL | [LibraryMS](https://github.com/rohaan2802/LibraryMS) |
-| Robot Energy Prediction | Python, regression, robotics ML | [Predict_Robot_Energy](https://github.com/rohaan2802/Predict_Robot_Energy) |
-| Fraud Detection | Classification, imbalanced tabular ML | [Fraud_Detection](https://github.com/rohaan2802/Fraud_Detection) |
+| Shuttlecock Detection for Robotic Collection | YOLOv8, computer vision, robotics | [ShuttleCock-Detection](https://github.com/rohaan2802/ShuttleCock-Detection) |
 | Ivor Paine Memorial Hospital | SQL Server, PHP, ER/EER modeling | [HospitalMS](https://github.com/rohaan2802/HospitalMS) |
-| Multi-Agent Game Playing | Search algorithms, game AI | [Multi_Agent_Game](https://github.com/rohaan2802/Multi_Agent_Game) |
-| Git Lite | C++, DSA, version control simulation | [GitLite_DSA_Project](https://github.com/rohaan2802/GitLite_DSA_Project) |
-| SpMV / HPCG Optimization | C/C++, numerical performance | [SPMV_Optimization](https://github.com/rohaan2802/SPMV_Optimization) |
+| K-means with Triangle Inequality | C++, OpenMP, parallel computing | [KMeanTriangleInequality](https://github.com/rohaan2802/KMeanTriangleInequality) |
 
 To add or reorder projects, edit the `.projects-grid` block in `index.html`.
 
@@ -214,7 +211,7 @@ After deploy, verify:
 |----------------|-------|
 | Copy, projects, skills, contact info | `index.html` |
 | Colors, spacing, layout, responsive rules | `style.css` (bump `?v=` on the CSS link in HTML to bust cache) |
-| Resume PDF | Replace `resume/Mohammad_Rohaan_Resume.pdf` |
+| Resume PDF | Run `python scripts/build-resume.py` (writes `resume/Mohammad_Rohaan_Resume.pdf`) |
 | Profile / OG image | Replace `images/portfolio_img.png` |
 | Favicon | Replace `images/icon.png` |
 | PWA name, colors, icons | `manifest.json` |
@@ -226,12 +223,12 @@ Copy an existing `<article class="project-card">` block in `#projects`, then upd
 
 - Title, tags (`.tag` spans), short description
 - `<details>` bullet list for deep-dive
-- GitHub link in `.project-actions`
+- GitHub link in `.project-actions` (add `project-actions-dual` plus a Live demo button when a public URL exists)
 
 ### CSS cache busting
 
 ```html
-<link rel="stylesheet" href="style.css?v=20" />
+<link rel="stylesheet" href="style.css?v=21" />
 ```
 
 Increment `v=` after CSS changes so returning visitors get fresh styles.
