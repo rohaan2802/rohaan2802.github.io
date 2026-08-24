@@ -241,13 +241,13 @@ def build():
     pdf.section("Objective")
     pdf.rich_para(
         [
-            ("BSCS candidate at ", False),
+            ("Final-year BSCS student at ", False),
             ("FAST NUCES, Islamabad", True),
-            (" (expected graduation Jan 2027). Delivered end-to-end projects in ", False),
-            ("AI/ML", True),
-            (" (live bilingual voice agent, NLP quiz generation, YOLOv8 detection), software engineering (", False),
+            (" (June 2027). I build full-stack systems and applied AI: a ", False),
+            ("live bilingual voice agent", True),
+            (", NLP quiz generation, YOLOv8 detection, and a ", False),
             ("Spring Boot", True),
-            (" library platform with Scrum and full test coverage), database systems (SQL Server + PHP hospital application), and systems programming (OpenMP K-means). Seeking software engineering or AI/ML internships and full-time roles where I can ship reliable, measurable work.", False),
+            (" library platform with Scrum delivery and documented test cases. Seeking software engineering or AI/ML internships and junior roles.", False),
         ]
     )
 
@@ -257,7 +257,7 @@ def build():
     pdf.cell(0, 5.0, "FAST NUCES — Islamabad, Pakistan")
     pdf.set_xy(pdf.l_margin, y)
     pdf.set_font(pdf.family, "", 10)
-    pdf.cell(0, 5.0, "Expected Jan 2027", align="R", new_x="LMARGIN", new_y="NEXT")
+    pdf.cell(0, 5.0, "Expected June 2027", align="R", new_x="LMARGIN", new_y="NEXT")
     pdf.set_font(pdf.family, "", 10)
     y = pdf.get_y()
     pdf.cell(0, 4.6, "Bachelor of Science in Computer Science (BSCS)")
@@ -268,26 +268,26 @@ def build():
     pdf.cell(0, 4.6, "Final-year BSCS candidate", align="R", new_x="LMARGIN", new_y="NEXT")
 
     pdf.section("Technical Skills")
-    pdf.skill_line("Languages", "Python, Java, C, C++, C#, JavaScript, SQL, PHP")
+    pdf.skill_line("Languages", "Python, Java, C, C++, JavaScript, SQL, PHP, C#")
     pdf.skill_line(
         "AI / ML / Data",
-        "scikit-learn, pandas, NLP (TF-IDF, BLEU/ROUGE/METEOR), YOLOv8, Streamlit, VAPI / Groq voice AI, model evaluation, feature engineering",
+        "scikit-learn, pandas, NLP (TF-IDF, BLEU/ROUGE/METEOR), YOLOv8, Streamlit, VAPI, Groq, Deepgram, model evaluation",
     )
     pdf.skill_line(
         "Software Eng",
-        "Java 17, Spring Boot 3.5, Spring MVC, Thymeleaf, Spring Security, Spring Data JPA, Hibernate, MySQL 8, Next.js, Scrum / Agile, REST APIs, Git, Maven",
+        "Java 17, Spring Boot 3.5, Spring Security, Spring MVC, Thymeleaf, JPA/Hibernate, MySQL 8, Next.js, REST APIs, Scrum, Git, Maven",
     )
     pdf.skill_line(
         "Web & Databases",
-        "HTML, CSS, JavaScript, PHP, SQL Server, T-SQL, ER / EER modeling, normalization",
+        "HTML, CSS, PHP, SQL Server, T-SQL, ER/EER modeling, normalization",
     )
     pdf.skill_line(
         "Systems",
-        "OpenMP, parallel computing, multithreading, benchmarking, DSA, Linux",
+        "C++, OpenMP, multithreading, benchmarking, DSA, Linux",
     )
     pdf.skill_line(
         "Embedded / Robotics",
-        "Arduino, ESP32, Raspberry Pi, ultrasonic sensors, MATLAB (robotics simulation basics)",
+        "Arduino, ESP32, Raspberry Pi, ultrasonic sensors, MATLAB (robotics simulation)",
     )
 
     pdf.section("Relevant Coursework")
@@ -303,8 +303,8 @@ def build():
         "AI Voice Cold-Calling Agent",
         "Next.js, VAPI, Groq, Deepgram",
         [
-            "Browser and phone voice agent with English/Urdu, objection handling, recordings, transcripts, and call history.",
-            "Deployed on Vercel; STT → LLM → TTS pipeline with outbound dialer and call-history UI.",
+            "Live English/Urdu sales voice agent: web Call Agent, objection handling, language lock, recordings, transcripts, and paginated call history.",
+            "Next.js app on Vercel; VAPI-orchestrated speech-to-text, Groq LLM, and TTS, with an outbound dialer for US +1 numbers.",
         ],
         links=[
             ("Live", "https://web-rouge-xi-23.vercel.app"),
@@ -315,8 +315,8 @@ def build():
         "AI Quiz Generator",
         "Python, Streamlit, scikit-learn",
         [
-            "Dual ML pipelines on RACE for question/answer ranking, distractors, and graduated hints; Streamlit quiz UI.",
-            "Evaluated with BLEU, ROUGE, and METEOR (hint METEOR 0.69).",
+            "RACE reading-comprehension quizzes: Linear SVM question/answer ranking plus Random Forest distractors and logistic-regression hints.",
+            "Streamlit UI for passage load, hints, scoring, and analytics; hint generation METEOR 0.69 (BLEU/ROUGE also reported).",
         ],
         links=[("GitHub", "https://github.com/rohaan2802/AI_Quiz_Generator")],
     )
@@ -324,8 +324,8 @@ def build():
         "LibraryMS",
         "Java 17, Spring Boot, MySQL, Scrum",
         [
-            "Role-based library platform: catalog, borrow/return, FIFO reservations, fines, and admin reports.",
-            "Delivered in Scrum sprints; 22/22 black-box and white-box tests passed.",
+            "Role-based library system (Admin / Librarian / Student) with Spring Security: catalog, borrow/return, FIFO reservations, fines, and admin reports.",
+            "Three Scrum sprints; 22/22 black-box and white-box test cases passed.",
         ],
         links=[("GitHub", "https://github.com/rohaan2802/LibraryMS")],
     )
@@ -333,8 +333,8 @@ def build():
         "Shuttlecock Detection",
         "YOLOv8, transfer learning",
         [
-            "Fine-tuned detector on 15k labeled images for robotic pickup; precision, recall, and mAP.",
-            "Real-time camera inference toward a Raspberry Pi + Arduino collection stack.",
+            "Fine-tuned YOLOv8 from COCO weights on 15,000 labeled images; evaluated with precision, recall, and mAP.",
+            "Real-time webcam inference; robotics collection pipeline designed for Raspberry Pi + Arduino.",
         ],
         links=[("GitHub", "https://github.com/rohaan2802/ShuttleCock-Detection")],
     )
@@ -342,8 +342,8 @@ def build():
         "Hospital DB System",
         "SQL Server, PHP, ER/EER",
         [
-            "Normalized hospital schema with integrity constraints and 12 operational SQL queries.",
-            "PHP/JS portals for intake, ward admin, and staff reports.",
+            "Replaced manual hospital records with a normalized ER/EER schema, integrity constraints, seed data, and 12 operational SQL queries.",
+            "PHP/JavaScript portals for patient intake, ward admin, consultant grading, and staff reports.",
         ],
         links=[("GitHub", "https://github.com/rohaan2802/HospitalMS")],
     )
@@ -353,14 +353,14 @@ def build():
     pdf.set_text_color(*INK)
     pdf.write(4.2, "K-means Triangle Inequality")
     pdf.set_font(pdf.family, "", 10)
-    pdf.write(4.2, "  (OpenMP) — Elkan vs Lloyd scheduling and dimension benchmarks.  ")
+    pdf.write(4.2, "  (C++, OpenMP) — Elkan vs Lloyd; up to 2.2x vs naive at 128-D.  ")
     pdf.set_font(pdf.family, "B", 9)
     pdf.write(4.2, "GitHub", link="https://github.com/rohaan2802/KMeanTriangleInequality")
     pdf.ln(4.6)
     pdf.set_font(pdf.family, "B", 10)
     pdf.write(4.2, "Git Lite")
     pdf.set_font(pdf.family, "", 10)
-    pdf.write(4.2, "  (C++) — Mini Git with commit DAG, hashing, and diff/merge.  ")
+    pdf.write(4.2, "  (C++) — Version-control subset: commit DAG, content hashing, diff, and merge.  ")
     pdf.set_font(pdf.family, "B", 9)
     pdf.write(4.2, "GitHub", link="https://github.com/rohaan2802/GitLite_DSA_Project")
     pdf.ln(5)
