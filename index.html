@@ -239,7 +239,7 @@
           <div class="section-head">
             <h2 class="section-title">Featured projects</h2>
             <p class="section-lead">
-              Six featured projects from <a href="https://github.com/rohaan2802" target="_blank" rel="noopener">my GitHub</a>—a live AI voice agent, NLP, computer vision, Spring Boot, databases, and systems work.
+              Eight featured projects from <a href="https://github.com/rohaan2802" target="_blank" rel="noopener">my GitHub</a>—a live AI voice agent, NLP, computer vision, Spring Boot, databases, systems, and robotics planning.
             </p>
           </div>
 
@@ -385,6 +385,52 @@
               </details>
               <div class="project-actions">
                 <a class="btn btn-primary" href="https://github.com/rohaan2802/KMeanTriangleInequality" target="_blank" rel="noopener">View code</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">Git Lite</h3>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag">C++</span><span class="tag">DSA</span><span class="tag">Graphs</span><span class="tag">Hashing</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Console version-control system modeled on Git internals: commit history as a DAG, content-addressed hashing, diffs, and merges—built to show data-structure and systems fundamentals.
+              </p>
+              <details class="project-details">
+                <summary>What I built</summary>
+                <ul class="bullets compact">
+                  <li><strong>History model:</strong> custom structures for commits, branching, and a directed acyclic commit graph.</li>
+                  <li><strong>Integrity:</strong> hashing so file identity and history can be checked, Git-style.</li>
+                  <li><strong>CLI:</strong> predictable commands for snapshot, compare, and merge with basic safety checks.</li>
+                </ul>
+              </details>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://github.com/rohaan2802/GitLite_DSA_Project" target="_blank" rel="noopener">View code</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">Multi-Robot Path Planning</h3>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag">Python</span><span class="tag">Search AI</span><span class="tag">BFS</span><span class="tag">Robotics</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Collision-aware multi-robot grid planner: time-expanded BFS with space-time reservations, priority order, checkpoints, one-way cells, and per-robot energy limits—stdlib only, no extra packages.
+              </p>
+              <details class="project-details">
+                <summary>What I built</summary>
+                <ul class="bullets compact">
+                  <li><strong>Search:</strong> BFS over state <code>(col, row, checkpoint, time)</code>; shortest-time path under current reservations.</li>
+                  <li><strong>Rules:</strong> obstacles, one-way arrows (no wait on those cells), ordered checkpoints, energy = max time, parked robots keep blocking the goal cell.</li>
+                  <li><strong>Output:</strong> per-robot path, time/energy, or an explicit no-path error; maps and runs from text input files.</li>
+                </ul>
+              </details>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://github.com/rohaan2802/Robot_Path_Plan" target="_blank" rel="noopener">View code</a>
               </div>
             </article>
           </div>

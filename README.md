@@ -108,7 +108,7 @@ rohaan2802.github.io/
 |---------|-----|---------|
 | **Hero** | — | Headline, availability, profile card, social links, CTA buttons |
 | **About** | `#about` | What I do, hardware/robotics, career goals |
-| **Featured projects** | `#projects` | Six GitHub projects with tags, expandable “What I built”, and a live demo on the voice agent |
+| **Featured projects** | `#projects` | Eight GitHub projects with tags, expandable “What I built”, and a live demo on the voice agent |
 | **Skills** | `#skills` | Four stack cards: languages, AI/ML, software engineering, systems/embedded |
 | **Contact** | `#contact` | Email, university email, phone, LinkedIn, GitHub, WhatsApp |
 
@@ -128,6 +128,8 @@ Curated from [github.com/rohaan2802](https://github.com/rohaan2802):
 | Shuttlecock Detection for Robotic Collection | YOLOv8, computer vision, robotics | [ShuttleCock-Detection](https://github.com/rohaan2802/ShuttleCock-Detection) |
 | Ivor Paine Memorial Hospital | SQL Server, PHP, ER/EER modeling | [HospitalMS](https://github.com/rohaan2802/HospitalMS) |
 | K-means with Triangle Inequality | C++, OpenMP, parallel computing | [KMeanTriangleInequality](https://github.com/rohaan2802/KMeanTriangleInequality) |
+| Git Lite | C++, DSA, version control internals | [GitLite_DSA_Project](https://github.com/rohaan2802/GitLite_DSA_Project) |
+| Multi-Robot Path Planning | Python, time-expanded BFS, robotics | [Robot_Path_Plan](https://github.com/rohaan2802/Robot_Path_Plan) |
 
 To add or reorder projects, edit the `.projects-grid` block in `index.html`.
 
