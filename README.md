@@ -1,5 +1,13 @@
 # Mohammad Rohaan — Portfolio
 
+## Project preview
+
+The current portfolio is shown at desktop and mobile widths below. The same composition is used across the live site so visitors can scan the work on a phone without losing the hierarchy.
+
+![Portfolio desktop and mobile preview](docs/screenshots/preview.webp)
+
+Individual captures: [desktop](docs/screenshots/desktop.webp) · [mobile](docs/screenshots/mobile.webp)
+
 [![Live site](https://img.shields.io/badge/live-rohaan2802.github.io-6d5efc?style=flat-square)](https://rohaan2802.github.io/)
 [![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-24292f?style=flat-square&logo=github)](https://pages.github.com/)
 [![Node.js](https://img.shields.io/badge/node-%E2%89%A518-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
