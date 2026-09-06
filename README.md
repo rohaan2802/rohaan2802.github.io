@@ -4,8 +4,11 @@
 [![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-24292f?style=flat-square&logo=github)](https://pages.github.com/)
 [![Node.js](https://img.shields.io/badge/node-%E2%89%A518-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 
-Modern, fast, responsive personal portfolio and brand site for **Mohammad Rohaan** — BSCS student at FAST NUCES (Islamabad). Built as a static site for [GitHub Pages](https://rohaan2802.github.io/) with no build step, no framework, and a token-based CSS design system.
+Modern, fast, responsive personal portfolio and brand site for **Mohammad Rohaan** — BSCS student at FAST NUCES (Islamabad). Built as a static site for GitHub Pages with no build step, no framework, and a token-based CSS design system.
 
+## 🚀 Live Demo
+
+[https://rohaan2802.github.io/](https://rohaan2802.github.io/)
 ---
 
 ## Table of contents
@@ -38,8 +41,6 @@ This repository hosts a single-page portfolio that presents software engineering
 - **Speed** — vanilla HTML/CSS/JS, no bundler; cache-busted CSS via query string
 - **Credibility** — structured data (JSON-LD), Open Graph/Twitter cards, resume PDF, and curated GitHub project links
 - **Accessibility** — skip link, ARIA labels, keyboard nav (Escape closes menu), reduced-motion support
-
-**Live URL:** [https://rohaan2802.github.io/](https://rohaan2802.github.io/)
 
 ---
 
